@@ -9,7 +9,7 @@
   }
 
   @include vp-767 {
-    top: 20px
+    top: 20px;
   }
 }
 
@@ -58,10 +58,9 @@
   &:hover,
   &:focus {
     color: $color-black-russian;
-  };
+  }
 
   &:active {
     color: $color-sapphire;
-  };
+  }
 }
-
