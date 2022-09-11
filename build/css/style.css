@@ -655,6 +655,57 @@ button,
   padding: 0 60px;
 }
 
+.gym {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.gym__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.gym__text {
+  width: 355px;
+  padding-top: 50px;
+  margin-left: 60px;
+  color: #102654;
+}
+
+.gym__text h2 {
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-family: "BebasNeue", "Arial", sans-serif;
+  font-size: 49px;
+  line-height: 49px;
+  letter-spacing: 0.03em;
+}
+
+.gym__text span {
+  display: block;
+  margin-bottom: 37px;
+  font-family: "RobotoCondensed", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.gym__text p {
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-family: "RobotoCondensed", "Arial", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+}
+
 .btn {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -1008,6 +1059,41 @@ button,
 } */
 
 @media (max-width: 1199px) {
+  .container {
+    padding: 0 45px;
+  }
+
+  .gym {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .gym__wrapper {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  .gym__text {
+    width: 502px;
+    margin: 0 auto;
+    padding-top: 0;
+    text-align: center;
+  }
+
+  .gym__text h2 {
+    margin-bottom: 10px;
+    font-size: 42px;
+    line-height: 42px;
+  }
+
+  .gym__text span {
+    margin-bottom: 30px;
+  }
+
+  .gym__text p[data-visible-tablet] {
+    display: none;
+  }
+
   .btn-primary {
     width: 183px;
   }
@@ -1065,15 +1151,29 @@ button,
   }
 }
 
-@media (max-width: 1023px) {
-  .container {
-    padding: 0 45px;
-  }
-}
-
 @media (max-width: 767px) {
   .container {
     padding: 0 15px;
+  }
+
+  .gym {
+    padding-top: 68px;
+  }
+
+  .gym__text {
+    width: 100%;
+    margin: 0;
+    text-align: left;
+  }
+
+  .gym__text h2 {
+    margin-bottom: 8px;
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  .gym__text span {
+    margin-bottom: 22px;
   }
 
   .btn-primary {
