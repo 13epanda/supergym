@@ -128,7 +128,7 @@ const start = gulp.series(build, syncServer);
 
 const createWebp = () => {
   const root = '';
-  return gulp.src(`source/img/${root}**/*.{png,jpg}`)
+  return gulp.src([`source/img/${root}**/*.{png,jpg}`, '!source/img/favicons/**/*'])
     .pipe(webp({quality: 90}))
     .pipe(gulp.dest(`source/img/${root}`));
 };
