@@ -706,6 +706,68 @@ button,
   line-height: 24px;
 }
 
+.gym__gallery {
+  position: relative;
+}
+
+.gym__photo {
+  width: 660px;
+  height: 401px;
+}
+
+.gym__photo img {
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.gym__video {
+  position: absolute;
+  bottom: 0;
+  left: -62px;
+  -webkit-transform: translateY(50%);
+  -ms-transform: translateY(50%);
+  transform: translateY(50%);
+  width: 364px;
+  height: 228px;
+}
+
+.gym__video img {
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.gym__preview {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.gym__preview-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #14367a;
+  opacity: 0.5;
+}
+
+[data-video].is-close iframe {
+  display: none;
+}
+
+[data-video].is-open .gym__preview {
+  display: none;
+}
+
+.gym__video .gym__btn {
+  position: absolute;
+}
+
 .btn {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -757,6 +819,24 @@ button,
 .btn-primary:active {
   background: -o-linear-gradient(352.95deg, #ed0233 17.6%, #0041ca 95.31%);
   background: linear-gradient(97.05deg, #ed0233 17.6%, #0041ca 95.31%);
+}
+
+.btn-video {
+  width: 72px;
+  height: 72px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: -o-linear-gradient(45.11deg, #003d85 25.38%, #b80027 74.89%);
+  background: linear-gradient(44.89deg, #003d85 25.38%, #b80027 74.89%);
+  border-radius: 50%;
+  outline: 2px solid linear-gradient(44.89deg, #003d85 25.38%, #b80027 74.89%);
 }
 
 .modal {
@@ -1094,6 +1174,24 @@ button,
     display: none;
   }
 
+  .gym__gallery {
+    margin-top: 50px;
+  }
+
+  .gym__photo {
+    width: 100%;
+    height: 345px;
+  }
+
+  .gym__video {
+    width: 266px;
+    height: 167px;
+    left: 50%;
+    -webkit-transform: translate(-50% 50%);
+    -ms-transform: translate(-50% 50%);
+    transform: translate(-50% 50%);
+  }
+
   .btn-primary {
     width: 183px;
   }
@@ -1174,6 +1272,25 @@ button,
 
   .gym__text span {
     margin-bottom: 22px;
+  }
+
+  .gym__gallery {
+    margin-top: 40px;
+  }
+
+  .gym__photo {
+    height: 313px;
+  }
+
+  .gym__video {
+    position: relative;
+    left: 0;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+    width: 100%;
+    height: 167px;
+    margin-top: 40px;
   }
 
   .btn-primary {

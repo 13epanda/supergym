@@ -117,7 +117,7 @@ export class Modals {
 
   _stopInteractive(modal) {
     if (this._stopPlay) {
-      modal.querySelectorAll('video, audio').forEach((el) => el.pause());
+      modal.querySelectorAll('video, audio, [data-video]').forEach((el) => el.pause());
       modal.querySelectorAll('[data-iframe]').forEach((el) => {
         el.querySelector('iframe').contentWindow.postMessage('{"event": "command", "func": "pauseVideo", "args": ""}', '*');
       });
