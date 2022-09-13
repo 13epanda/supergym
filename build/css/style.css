@@ -718,6 +718,8 @@ button,
 .gym__photo img {
   -o-object-fit: cover;
   object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
 .gym__video {
@@ -824,6 +826,7 @@ button,
 .btn-video {
   width: 72px;
   height: 72px;
+  padding: 14px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -833,10 +836,14 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background: -o-linear-gradient(45.11deg, #003d85 25.38%, #b80027 74.89%);
-  background: linear-gradient(44.89deg, #003d85 25.38%, #b80027 74.89%);
+  border: solid 2px transparent;
   border-radius: 50%;
-  outline: 2px solid linear-gradient(44.89deg, #003d85 25.38%, #b80027 74.89%);
+  background: -o-linear-gradient(45.11deg, #003d85 25.38%, #b80027 74.89%) content-box;
+  background: linear-gradient(44.89deg, #003d85 25.38%, #b80027 74.89%) content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  -webkit-box-shadow: rgba(0, 61, 133, 0.2) 0 0 0 2px, rgba(184, 0, 39, 0.2) 0 0 0 2px;
+  box-shadow: rgba(0, 61, 133, 0.2) 0 0 0 2px, rgba(184, 0, 39, 0.2) 0 0 0 2px;
 }
 
 .modal {
@@ -1176,6 +1183,7 @@ button,
 
   .gym__gallery {
     margin-top: 50px;
+    width: 100%;
   }
 
   .gym__photo {
@@ -1187,13 +1195,23 @@ button,
     width: 266px;
     height: 167px;
     left: 50%;
-    -webkit-transform: translate(-50% 50%);
-    -ms-transform: translate(-50% 50%);
-    transform: translate(-50% 50%);
+    -webkit-transform: translate(-50%, 50%);
+    -ms-transform: translate(-50%, 50%);
+    transform: translate(-50%, 50%);
   }
 
   .btn-primary {
     width: 183px;
+  }
+
+  .btn-video {
+    width: 52px;
+    height: 52px;
+  }
+
+  .btn-video svg {
+    width: 12px;
+    height: 12px;
   }
 
   .header {

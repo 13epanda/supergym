@@ -53,10 +53,26 @@
 .btn-video {
   width: 72px;
   height: 72px;
+  padding: 14px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(44.89deg, $color-dark-cerulean 25.38%, $color-venetian-red 74.89%);
+  border: solid 2px transparent;
   border-radius: 50%;
-  outline: 2px solid linear-gradient(44.89deg, $color-dark-cerulean 25.38%, $color-venetian-red 74.89%);
+  background: linear-gradient(44.89deg, $color-dark-cerulean 25.38%, $color-venetian-red 74.89%) content-box;
+  box-sizing: content-box;
+  box-shadow: rgba($color-dark-cerulean, 0.2) 0 0 0 2px,
+    rgba($color-venetian-red, 0.2) 0 0 0 2px;
+
+  @include vp-1199 {
+    width: 52px;
+    height: 52px;
+  }
+}
+
+.btn-video svg {
+  @include vp-1199 {
+    width: 12px;
+    height: 12px;
+  }
 }
