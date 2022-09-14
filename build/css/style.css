@@ -782,19 +782,6 @@ button,
   text-align: center;
 }
 
-.membership__list {
-  -webkit-padding-start: 0;
-  padding-inline-start: 0;
-  -webkit-margin-before: 0;
-  margin-block-start: 0;
-  -webkit-margin-after: 0;
-  margin-block-end: 0;
-}
-
-.membership__item {
-  list-style-type: none;
-}
-
 .membership__months {
   -webkit-padding-start: 0;
   padding-inline-start: 0;
@@ -843,11 +830,11 @@ button,
   color: #102654;
 }
 
-.membership__month.is-active button {
+.membership__month button.is-active {
   color: #102654;
 }
 
-.membership__month.is-active button::after {
+.membership__month button.is-active::after {
   position: absolute;
   content: "";
   bottom: 0;
@@ -858,6 +845,19 @@ button,
   height: 2px;
   width: 100%;
   background-color: #d10a42;
+}
+
+.membership__month-text {
+  margin-bottom: 39px;
+  padding: 20px 0;
+  font-family: "RobotoCondensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #102654;
+  text-align: center;
+  border-bottom: 2px solid rgba(120, 120, 120, 0.2);
 }
 
 .membership__categories {
@@ -876,6 +876,10 @@ button,
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start;
+}
+
+.membership__categories[data-membership="hidden"] {
+  display: none;
 }
 
 .membership__category {
@@ -1573,6 +1577,11 @@ button,
   }
 
   .membership__month button {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .membership__month-text {
     font-size: 16px;
     line-height: 24px;
   }
