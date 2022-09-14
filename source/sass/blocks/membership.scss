@@ -44,9 +44,11 @@
   padding-inline-start: 0;
   margin-block-start: 0;
   margin-block-end: 0;
+  margin: 0 auto 39px;
+  width: fit-content;
   display: flex;
   justify-content: center;
-  margin-bottom: 39px;
+  border-bottom: 2px solid rgba(120, 120, 120, 0.2);
 }
 
 .membership__month {
@@ -63,6 +65,7 @@
 }
 
 .membership__month button {
+  position: relative;
   padding: 20px 0;
   font-family: $ff-roboto;
   font-style: normal;
@@ -87,7 +90,17 @@
 
 .membership__month.is-active button {
   color: $color-sapphire;
-  border-bottom: 2px solid $color-crimson;
+
+  &::after {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    transform: translateY(50%);
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: $color-crimson;
+  }
 }
 
 .membership__categories {
@@ -170,7 +183,8 @@
 .membership__price p {
   position: absolute;
   bottom: 10px;
-  left: 0;
+  left: 50%;
+  transform: translateX(-50%);
   margin-top: 0;
   margin-bottom: 0;
   font-weight: 700;

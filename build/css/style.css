@@ -802,13 +802,17 @@ button,
   margin-block-start: 0;
   -webkit-margin-after: 0;
   margin-block-end: 0;
+  margin: 0 auto 39px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin-bottom: 39px;
+  border-bottom: 2px solid rgba(120, 120, 120, 0.2);
 }
 
 .membership__month {
@@ -821,6 +825,7 @@ button,
 }
 
 .membership__month button {
+  position: relative;
   padding: 20px 0;
   font-family: "RobotoCondensed", "Arial", sans-serif;
   font-style: normal;
@@ -840,7 +845,19 @@ button,
 
 .membership__month.is-active button {
   color: #102654;
-  border-bottom: 2px solid #d10a42;
+}
+
+.membership__month.is-active button::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  -webkit-transform: translateY(50%);
+  -ms-transform: translateY(50%);
+  transform: translateY(50%);
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background-color: #d10a42;
 }
 
 .membership__categories {
@@ -923,7 +940,10 @@ button,
 .membership__price p {
   position: absolute;
   bottom: 10px;
-  left: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
   margin-top: 0;
   margin-bottom: 0;
   font-weight: 700;
