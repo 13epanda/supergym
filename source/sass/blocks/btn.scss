@@ -50,6 +50,36 @@
   }
 }
 
+.btn-second {
+  width: 206px;
+  min-height: 64px;
+  padding: 27px 44px;
+  outline: 2px solid $color-sapphire;
+  font-family: $ff-roboto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $color-sapphire;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background: linear-gradient(97.05deg, $color-torch-red 17.6%, $color-cobalt 95.31%);
+    outline: none;
+    color: $color-default-white;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
+}
+
 .btn-video {
   width: 72px;
   height: 72px;

@@ -650,17 +650,12 @@ button,
 
 .container {
   width: 100%;
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 0 60px;
+  padding: 0 calc(50vw - 640px);
 }
 
 .gym {
   padding-top: 120px;
   padding-bottom: 120px;
-}
-
-.gym__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -770,6 +765,191 @@ button,
   position: absolute;
 }
 
+.membership {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background-color: #f8f9fc;
+}
+
+.membership h2 {
+  margin-top: 0;
+  margin-bottom: 45px;
+  font-family: "BebasNeue", "Arial", sans-serif;
+  font-size: 49px;
+  line-height: 49px;
+  letter-spacing: 0.03em;
+  color: #102654;
+  text-align: center;
+}
+
+.membership__list {
+  -webkit-padding-start: 0;
+  padding-inline-start: 0;
+  -webkit-margin-before: 0;
+  margin-block-start: 0;
+  -webkit-margin-after: 0;
+  margin-block-end: 0;
+}
+
+.membership__item {
+  list-style-type: none;
+}
+
+.membership__months {
+  -webkit-padding-start: 0;
+  padding-inline-start: 0;
+  -webkit-margin-before: 0;
+  margin-block-start: 0;
+  -webkit-margin-after: 0;
+  margin-block-end: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-bottom: 39px;
+}
+
+.membership__month {
+  list-style-type: none;
+  margin-right: 46px;
+}
+
+.membership__month:last-child {
+  margin-right: 0;
+}
+
+.membership__month button {
+  padding: 20px 0;
+  font-family: "RobotoCondensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: rgba(16, 38, 84, 0.5);
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.membership__month button:hover,
+.membership__month button:focus {
+  color: #102654;
+}
+
+.membership__month.is-active button {
+  color: #102654;
+  border-bottom: 2px solid #d10a42;
+}
+
+.membership__categories {
+  -webkit-padding-start: 0;
+  padding-inline-start: 0;
+  -webkit-margin-before: 0;
+  margin-block-start: 0;
+  -webkit-margin-after: 0;
+  margin-block-end: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.membership__category {
+  list-style-type: none;
+  margin-right: 40px;
+  margin-bottom: 40px;
+  padding: 68px 77px;
+  min-width: 360px;
+  font-family: "RobotoCondensed", "Arial", sans-serif;
+  font-style: normal;
+  text-align: center;
+  background-color: #ffffff;
+  border: 7px solid transparent;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.membership__category:last-child {
+  margin-right: 0;
+  margin-bottom: 0;
+}
+
+.membership__category:hover,
+.membership__category:focus {
+  border-image-source: linear-gradient(90deg, #d10a42 0%, #00359f 75%);
+  border-image-width: 7px;
+  border-image-repeat: stretch;
+  border-image-slice: 1;
+}
+
+.membership__category h4 {
+  margin-top: 0;
+  margin-bottom: 22px;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 29px;
+}
+
+.membership__category span {
+  margin-bottom: 59px;
+  display: block;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #495a7d;
+}
+
+.membership__price {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 59px;
+}
+
+.membership__price p {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 150px;
+  color: #e8e8e8;
+  opacity: 0.48;
+}
+
+.membership__price span {
+  margin: 0 14px 0 0;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 90px;
+  color: #103aae;
+  z-index: 1;
+}
+
+.membership__price svg {
+  z-index: 1;
+}
+
+.membership__category .btn-second {
+  margin: 0 auto;
+}
+
 .btn {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -819,8 +999,45 @@ button,
 }
 
 .btn-primary:active {
-  background: -o-linear-gradient(352.95deg, #ed0233 17.6%, #0041ca 95.31%);
-  background: linear-gradient(97.05deg, #ed0233 17.6%, #0041ca 95.31%);
+  background: -o-linear-gradient(352.95deg, #ed0233 17.6%, #003eb7 95.31%);
+  background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
+}
+
+.btn-second {
+  width: 206px;
+  min-height: 64px;
+  padding: 27px 44px;
+  outline: 2px solid #102654;
+  font-family: "RobotoCondensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #102654;
+}
+
+.btn-second:hover,
+.btn-second:focus,
+.btn-second:active {
+  background: -o-linear-gradient(352.95deg, #ed0233 17.6%, #003eb7 95.31%);
+  background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
+  outline: none;
+  color: #ffffff;
+}
+
+.btn-second:active {
+  opacity: 0.7;
 }
 
 .btn-video {
@@ -959,13 +1176,11 @@ button,
 }
 
 .header {
+  padding-top: 30px;
+  padding-bottom: 25px;
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-}
-
-.header__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -975,11 +1190,9 @@ button,
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start;
-  padding-top: 30px;
-  padding-bottom: 25px;
 }
 
-.header__wrapper a {
+.header a {
   padding-top: 0;
   padding-bottom: 0;
   font-family: "BebasNeue", "Arial", sans-serif;
@@ -991,20 +1204,16 @@ button,
   text-decoration: none;
 }
 
-.header__wrapper a:hover,
-.header__wrapper a:focus {
+.header a:hover,
+.header a:focus {
   color: #030a1a;
 }
 
-.header__wrapper a:active {
+.header a:active {
   color: #102654;
 }
 
 .main {
-  background: conic-gradient(from 130.31deg at 16.03% 39.06%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
-}
-
-.main__wrapper {
   padding-top: 51px;
   padding-bottom: 51px;
   display: -webkit-box;
@@ -1016,6 +1225,7 @@ button,
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start;
+  background: conic-gradient(from 130.31deg at 16.03% 39.06%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
 }
 
 .main__text {
@@ -1147,15 +1357,12 @@ button,
 
 @media (max-width: 1199px) {
   .container {
-    padding: 0 45px;
+    padding: 0 calc(50vw - 600px);
   }
 
   .gym {
     padding-top: 100px;
     padding-bottom: 100px;
-  }
-
-  .gym__wrapper {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
   }
@@ -1200,6 +1407,30 @@ button,
     transform: translate(-50%, 50%);
   }
 
+  .membership {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .membership__month {
+    margin-right: 54px;
+  }
+
+  .membership__categories {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .membership__category {
+    margin-right: 0;
+    min-width: 442px;
+  }
+
   .btn-primary {
     width: 183px;
   }
@@ -1218,18 +1449,18 @@ button,
     top: 40px;
   }
 
-  .header__wrapper svg {
+  .header svg {
     width: 82px;
     height: 17px;
   }
 
-  .header__wrapper a {
+  .header a {
     font-size: 24px;
     line-height: 24px;
     letter-spacing: 0.02em;
   }
 
-  .main__wrapper {
+  .main {
     padding-top: 80px;
     padding-bottom: 65px;
   }
@@ -1269,7 +1500,7 @@ button,
 
 @media (max-width: 767px) {
   .container {
-    padding: 0 15px;
+    padding: 0 calc(50vw - 145px);
   }
 
   .gym {
@@ -1311,6 +1542,27 @@ button,
     margin-top: 40px;
   }
 
+  .membership {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  .membership h2 {
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  .membership__month button {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .membership__category {
+    margin-bottom: 35px;
+    min-width: 100%;
+    padding: 55px 42px;
+  }
+
   .btn-primary {
     width: 100%;
   }
@@ -1332,17 +1584,17 @@ button,
     top: 20px;
   }
 
-  .header__wrapper svg {
+  .header svg {
     width: 68px;
     height: 15px;
   }
 
-  .header__wrapper a {
+  .header a {
     font-size: 20px;
     line-height: 20px;
   }
 
-  .main__wrapper {
+  .main {
     padding-top: 110px;
     padding-bottom: 37px;
   }
