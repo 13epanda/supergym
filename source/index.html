@@ -23,94 +23,88 @@
   <body>
     <div class="wrapper">
       <header>
-        <section class="header">
-          <div class="container header__wrapper">
-            <a aria-label="Перейти на главную страницу.">
-              <svg width="89" height="20">
-                <use xlink:href="img/sprite_auto.svg#logo"></use>
-              </svg>
-            </a>
-            <a href="tel:78005555555" aria-label="Контактный телефон: 8-800-555-55-55.">8-800-555-55-55</a>
-          </div>
+        <section class="container header">
+          <a aria-label="Перейти на главную страницу.">
+            <svg width="89" height="20">
+              <use xlink:href="img/sprite_auto.svg#logo"></use>
+            </svg>
+          </a>
+          <a href="tel:78005555555" aria-label="Контактный телефон: 8-800-555-55-55.">8-800-555-55-55</a>
         </section>
       </header>
       <main>
-        <section class="main">
-          <div class="container main__wrapper">
-            <div class="main__text">
-              <h2>омск</h2>
-              <h1>Фитнес центр</h1>
-              <ul class="main__description">
-                <li>Тренажёрный зал</li>
-                <li>Групповые занятия</li>
-                <li>Кардио-зона</li>
-              </ul>
-              <a class="btn btn-primary main__btn">Купить абонемент</a>
-            </div>
-            <div class="main__image">
-              <!-- 1х: 500px; 2x: 1000px -->
-              <picture>
-                <source type="image/webp" media="(max-width: 1200px)" srcset="img/tablet/main-tablet.webp 1x, img/tablet/main-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/desktop/main.webp 1x, img/desktop/main@2x.webp 2x">
+        <section class="container main">
+          <div class="main__text">
+            <h2>омск</h2>
+            <h1>Фитнес центр</h1>
+            <ul class="main__description">
+              <li>Тренажёрный зал</li>
+              <li>Групповые занятия</li>
+              <li>Кардио-зона</li>
+            </ul>
+            <a class="btn btn-primary main__btn">Купить абонемент</a>
+          </div>
+          <div class="main__image">
+            <!-- 1х: 500px; 2x: 1000px -->
+            <picture>
+              <source type="image/webp" media="(max-width: 1200px)" srcset="img/tablet/main-tablet.webp 1x, img/tablet/main-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/desktop/main.webp 1x, img/desktop/main@2x.webp 2x">
 
-                <source media="(max-width: 1200px)" srcset="img/tablet/main-tablet.jpg 1x, img/tablet/main-tablet@2x.jpg 2x">
-                <img src="img/desktop/main.jpg" srcset="img/desktop/main@2x.jpg 2x" width="500" height="556" alt="Мускулистый мужчина в футболге супермена.">
+              <source media="(max-width: 1200px)" srcset="img/tablet/main-tablet.jpg 1x, img/tablet/main-tablet@2x.jpg 2x">
+              <img src="img/desktop/main.jpg" srcset="img/desktop/main@2x.jpg 2x" width="500" height="556" alt="Мускулистый мужчина в футболге супермена.">
+            </picture>
+          </div>
+          <ul class="main__social">
+            <li>
+              <a href="#" aria-label="Наша страничка в Фейсбуке.">Fb</a>
+            </li>
+            <li>
+              <a href="#" aria-label="Наша страничка в Вконтакте.">vk</a>
+            </li>
+            <li>
+              <a href="#" aria-label="Наша страничка в Инстаграмме.">ig</a>
+            </li>
+          </ul>
+        </section>
+        <section class="container gym">
+          <div class="gym__text">
+            <h2>Тренажерный зал</h2>
+            <span>Просторный зал площадью 900 кв/м</span>
+            <p>Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов. </p>
+            <p data-visible-tablet>В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами. Также в фитнес центре есть несколько оборудованных залов для различных видов групповых занятий. </p>
+          </div>
+          <div class="gym__gallery">
+            <div class="gym__photo">
+              <!-- 1х: 660px; 2x: 401px -->
+              <picture>
+                <source type="image/webp" media="(max-width: 768px)" srcset="img/mobile/gym-mobile.webp 1x, img/mobile/gym-mobile@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 1200px)" srcset="img/tablet/gym-tablet.webp 1x, img/tablet/gym-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/desktop/gym.webp 1x, img/desktop/gym@2x.webp 2x">
+
+                <source media="(max-width: 768px)" srcset="img/mobile/gym-mobile.jpg 1x, img/mobile/gym-mobile@2x.jpg 2x">
+                <source media="(max-width: 1200px)" srcset="img/tablet/gym-tablet.jpg 1x, img/tablet/gym-tablet@2x.jpg 2x">
+                <img src="img/desktop/gym.jpg" srcset="img/desktop/gym@2x.jpg 2x" width="660" height="401" alt="Просторный зал площадью 900 кв/м.">
               </picture>
             </div>
-            <ul class="main__social">
-              <li>
-                <a href="#" aria-label="Наша страничка в Фейсбуке.">Fb</a>
-              </li>
-              <li>
-                <a href="#" aria-label="Наша страничка в Вконтакте.">vk</a>
-              </li>
-              <li>
-                <a href="#" aria-label="Наша страничка в Инстаграмме.">ig</a>
-              </li>
-            </ul>
-          </div>
-        </section>
-        <section class="gym">
-          <div class="container gym__wrapper">
-            <div class="gym__text">
-              <h2>Тренажерный зал</h2>
-              <span>Просторный зал площадью 900 кв/м</span>
-              <p>Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов. </p>
-              <p data-visible-tablet>В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами. Также в фитнес центре есть несколько оборудованных залов для различных видов групповых занятий. </p>
-            </div>
-            <div class="gym__gallery">
-              <div class="gym__photo">
-                <!-- 1х: 660px; 2x: 401px -->
+            <div class="gym__video is-close" data-video>
+              <div class="gym__preview">
+                <div class="gym__preview-bg"></div>
                 <picture>
-                  <source type="image/webp" media="(max-width: 768px)" srcset="img/mobile/gym-mobile.webp 1x, img/mobile/gym-mobile@2x.webp 2x">
-                  <source type="image/webp" media="(max-width: 1200px)" srcset="img/tablet/gym-tablet.webp 1x, img/tablet/gym-tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="img/desktop/gym.webp 1x, img/desktop/gym@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 768px)" srcset="img/mobile/gym-video-mobile.webp 1x, img/mobile/gym-video-mobile@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 1200px)" srcset="img/tablet/gym-video-tablet.webp 1x, img/tablet/gym-video-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/desktop/gym-video.webp 1x, img/desktop/gym-video@2x.webp 2x">
 
-                  <source media="(max-width: 768px)" srcset="img/mobile/gym-mobile.jpg 1x, img/mobile/gym-mobile@2x.jpg 2x">
-                  <source media="(max-width: 1200px)" srcset="img/tablet/gym-tablet.jpg 1x, img/tablet/gym-tablet@2x.jpg 2x">
-                  <img src="img/desktop/gym.jpg" srcset="img/desktop/gym@2x.jpg 2x" width="660" height="401" alt="Просторный зал площадью 900 кв/м.">
+                  <source media="(max-width: 768px)" srcset="img/mobile/gym-video-mobile.jpg 1x, img/mobile/gym-video-mobile@2x.jpg 2x">
+                  <source media="(max-width: 1200px)" srcset="img/tablet/gym-video-tablet.jpg 1x, img/tablet/gym-video-tablet@2x.jpg 2x">
+                  <img src="img/desktop/gym-video.jpg" srcset="img/desktop/gym-video@2x.jpg 2x" width="364" height="228" alt="Просторный зал площадью 900 кв/м.">
                 </picture>
+                <button class="btn btn-video gym__btn" type="button" aria-label="Воспроизвести видео" data-auto-play>
+                  <svg width="17" height="17">
+                    <use xlink:href="img/sprite_auto.svg#play"></use>
+                  </svg>
+                </button>
               </div>
-              <div class="gym__video is-close" data-video>
-                <div class="gym__preview">
-                  <div class="gym__preview-bg"></div>
-                  <picture>
-                    <source type="image/webp" media="(max-width: 768px)" srcset="img/mobile/gym-video-mobile.webp 1x, img/mobile/gym-video-mobile@2x.webp 2x">
-                    <source type="image/webp" media="(max-width: 1200px)" srcset="img/tablet/gym-video-tablet.webp 1x, img/tablet/gym-video-tablet@2x.webp 2x">
-                    <source type="image/webp" srcset="img/desktop/gym-video.webp 1x, img/desktop/gym-video@2x.webp 2x">
-
-                    <source media="(max-width: 768px)" srcset="img/mobile/gym-video-mobile.jpg 1x, img/mobile/gym-video-mobile@2x.jpg 2x">
-                    <source media="(max-width: 1200px)" srcset="img/tablet/gym-video-tablet.jpg 1x, img/tablet/gym-video-tablet@2x.jpg 2x">
-                    <img src="img/desktop/gym-video.jpg" srcset="img/desktop/gym-video@2x.jpg 2x" width="364" height="228" alt="Просторный зал площадью 900 кв/м.">
-                  </picture>
-                  <button class="btn btn-video gym__btn" type="button" aria-label="Воспроизвести видео" data-auto-play>
-                    <svg width="17" height="17">
-                      <use xlink:href="img/sprite_auto.svg#play"></use>
-                    </svg>
-                  </button>
-                </div>
-                <iframe data-iframe width="364" height="228" src="https://www.youtube.com/embed/9TZXsZItgdw?rel=0&autoplay=0&showinfo=0&controls=0&HD=1&rel=0" title="Видео на YouTube" frameborder="0" allowfullscreen></iframe>
-              </div>
+              <iframe data-iframe width="364" height="228" src="https://www.youtube.com/embed/9TZXsZItgdw?rel=0&autoplay=0&showinfo=0&controls=0&HD=1&rel=0" title="Видео на YouTube" frameborder="0" allowfullscreen></iframe>
             </div>
           </div>
         </section>

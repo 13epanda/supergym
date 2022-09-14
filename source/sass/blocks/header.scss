@@ -1,8 +1,12 @@
 .header {
+  padding-top: 30px;
+  padding-bottom: 25px;
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
 
   @include vp-1199 {
     top: 40px;
@@ -13,15 +17,8 @@
   }
 }
 
-.header__wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  padding-top: 30px;
-  padding-bottom: 25px;
-}
 
-.header__wrapper svg {
+.header svg {
   @include vp-1199 {
     width: 82px;
     height: 17px;
@@ -33,7 +30,7 @@
   }
 }
 
-.header__wrapper a {
+.header a {
   padding-top: 0;
   padding-bottom: 0;
   font-family: $ff-bebas-neue;

@@ -1,24 +1,18 @@
 .gym {
   padding-top: 120px;
   padding-bottom: 120px;
-
-  @include vp-1199 {
-    padding-top: 100px;
-    padding-bottom: 100px;
-  }
-
-  @include vp-767 {
-    padding-top: 68px;
-  }
-}
-
-.gym__wrapper {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
 
   @include vp-1199 {
+    padding-top: 100px;
+    padding-bottom: 100px;
     flex-wrap: wrap;
+  }
+
+  @include vp-767 {
+    padding-top: 68px;
   }
 }
 
