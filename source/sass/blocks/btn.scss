@@ -100,10 +100,3 @@
       inset rgba($color-default-white, 0.2) 0 0 10px 2px;
   }
 }
-
-.btn-video svg {
-  @include vp-1199 {
-    width: 12px;
-    height: 12px;
-  }
-}

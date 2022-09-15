@@ -669,7 +669,7 @@ button,
 
 .gym__text {
   width: 355px;
-  padding-top: 50px;
+  padding: 50px calc(50vw - 145px) 0;
   margin-left: 60px;
   color: #102654;
 }
@@ -703,6 +703,7 @@ button,
 
 .gym__gallery {
   position: relative;
+  margin-bottom: 114px;
 }
 
 .gym__photo {
@@ -753,6 +754,11 @@ button,
   opacity: 0.5;
 }
 
+.gym__preview img {
+  width: 364px;
+  height: 228px;
+}
+
 .gym__video iframe {
   border: none;
   outline: none;
@@ -778,14 +784,13 @@ button,
 .membership {
   position: relative;
   padding-top: 120px;
-  padding-bottom: 120px;
-  overflow: hidden;
+  padding-bottom: 85px;
   background-color: #f8f9fc;
 }
 
 .membership h2 {
   margin-top: 0;
-  margin-bottom: 45px;
+  margin-bottom: 19px;
   font-family: "BebasNeue", "Arial", sans-serif;
   font-size: 49px;
   line-height: 49px;
@@ -801,7 +806,7 @@ button,
   margin-block-start: 0;
   -webkit-margin-after: 0;
   margin-block-end: 0;
-  margin: 0 auto 39px;
+  margin: 0 auto 37px;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -825,7 +830,7 @@ button,
 
 .membership__month button {
   position: relative;
-  padding: 20px 0;
+  padding: 14px 0;
   font-family: "RobotoCondensed", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -904,18 +909,24 @@ button,
   list-style-type: none;
   margin-right: 40px;
   margin-bottom: 40px;
+  position: relative;
+  width: 100%;
+}
+
+.membership__category:last-child {
+  margin-right: 0;
 }
 
 .membership__link {
   display: block;
-  padding: 68px 77px;
+  padding: 55px 70px;
   min-width: 360px;
   font-family: "RobotoCondensed", "Arial", sans-serif;
   font-style: normal;
   text-align: center;
   text-decoration: none;
   background-color: #ffffff;
-  border: 7px solid transparent;
+  border: 7px solid #ffffff;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
@@ -931,14 +942,14 @@ button,
 
 .membership__category h4 {
   margin-top: 0;
-  margin-bottom: 22px;
+  margin-bottom: 9px;
   font-weight: 700;
   font-size: 26px;
   line-height: 29px;
 }
 
 .membership__category span {
-  margin-bottom: 59px;
+  margin-bottom: 66px;
   display: block;
   font-weight: 400;
   font-size: 16px;
@@ -957,7 +968,7 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin-bottom: 59px;
+  margin-bottom: 34px;
 }
 
 .membership__price p {
@@ -991,6 +1002,7 @@ button,
 
 .membership__link .btn-second {
   margin: 0 auto;
+  padding: 20px;
 }
 
 .membership__link:hover .btn-second,
@@ -1012,9 +1024,9 @@ button,
   right: -105px;
   width: 321px;
   height: 384px;
-  -webkit-transform: rotate(-200deg);
-  -ms-transform: rotate(-200deg);
-  transform: rotate(-200deg);
+  -webkit-transform: rotate(-210deg);
+  -ms-transform: rotate(-210deg);
+  transform: rotate(-210deg);
 }
 
 .membership__weight img {
@@ -1497,7 +1509,7 @@ button,
 
   .gym {
     padding-top: 100px;
-    padding-bottom: 100px;
+    padding-bottom: 70px;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
   }
@@ -1524,7 +1536,7 @@ button,
   }
 
   .gym__gallery {
-    margin-top: 50px;
+    margin-top: 40px;
     width: 100%;
   }
 
@@ -1542,13 +1554,33 @@ button,
     transform: translate(-50%, 50%);
   }
 
+  .gym__preview img {
+    width: 266px;
+    height: 167px;
+  }
+
   .membership {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 95px;
+    padding-bottom: 63px;
+  }
+
+  .membership h2 {
+    font-size: 42px;
+    line-height: 42px;
+  }
+
+  .membership__months {
+    margin-bottom: 40px;
   }
 
   .membership__month {
-    margin-right: 54px;
+    margin-right: 46px;
+  }
+
+  .membership__month button {
+    padding: 13px 0;
+    font-size: 18px;
+    line-height: 27px;
   }
 
   .membership__categories {
@@ -1561,12 +1593,19 @@ button,
     align-items: center;
   }
 
+  .membership__category {
+    margin-right: 0;
+  }
+
   .membership__link {
+    padding-top: 60px;
+    padding-bottom: 58px;
     min-width: 442px;
   }
 
   .membership__weight {
-    bottom: -225px;
+    bottom: -75px;
+    right: -5px;
     width: 289px;
     height: 345px;
   }
@@ -1578,11 +1617,6 @@ button,
   .btn-video {
     width: 73px;
     height: 73px;
-  }
-
-  .btn-video svg {
-    width: 12px;
-    height: 12px;
   }
 
   .header {
@@ -1644,7 +1678,7 @@ button,
   }
 
   .gym {
-    padding-top: 68px;
+    padding: 68px 0 0;
   }
 
   .gym__text {
@@ -1663,8 +1697,13 @@ button,
     margin-bottom: 22px;
   }
 
+  .gym__text p {
+    padding-right: 15px;
+  }
+
   .gym__gallery {
-    margin-top: 40px;
+    margin-top: 26px;
+    margin-bottom: 70px;
   }
 
   .gym__photo {
@@ -1682,17 +1721,28 @@ button,
     margin-top: 40px;
   }
 
+  .gym__preview img {
+    width: 100%;
+    height: 167px;
+  }
+
   .membership {
-    padding-top: 70px;
-    padding-bottom: 70px;
+    padding-top: 68px;
+    padding-bottom: 35px;
   }
 
   .membership h2 {
+    margin-bottom: 10px;
     font-size: 32px;
     line-height: 32px;
   }
 
+  .membership__months {
+    margin-bottom: 35px;
+  }
+
   .membership__month button {
+    padding: 13px 0;
     font-size: 16px;
     line-height: 24px;
   }
@@ -1704,7 +1754,38 @@ button,
 
   .membership__link {
     min-width: 100%;
-    padding: 55px 42px;
+    width: 100%;
+    padding: 42px 30px 45px;
+  }
+
+  .membership__category h4 {
+    font-size: 22px;
+    line-height: 24px;
+  }
+
+  .membership__category span {
+    margin-top: 6px;
+    margin-bottom: 55px;
+  }
+
+  .membership__price {
+    margin-bottom: 30px;
+  }
+
+  .membership__price p {
+    font-size: 80px;
+    line-height: 120px;
+  }
+
+  .membership__price span {
+    margin: 0 11px 0 0;
+    font-size: 48px;
+    line-height: 72px;
+  }
+
+  .membership__price svg {
+    width: 24px;
+    height: 33px;
   }
 
   .membership__weight {
