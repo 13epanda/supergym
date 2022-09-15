@@ -1,23 +1,17 @@
-const btns = document.querySelectorAll('.footer__button');
+const allVideo = document.querySelectorAll('[data-video]');
 
-const accordion = () => {
-  for (let btn of btns) {
-    btn.classList.add('footer__button--mobile');
+const playVideo = () => {
+  allVideo.forEach((el) => {
+    const buttonPlay = el.querySelector('[data-play]');
+    el.classList.remove('is-open');
+    el.classList.add('is-close');
 
-    btn.addEventListener('click', function () {
-      const activeBtns = document.querySelectorAll('.footer__button--active');
-      if (btn.classList.contains('footer__button--active')) {
-        for (let activeBtn of activeBtns) {
-          activeBtn.classList.remove('footer__button--active');
-        }
-      } else {
-        for (let activeBtn of activeBtns) {
-          activeBtn.classList.remove('footer__button--active');
-        }
-        btn.classList.add('footer__button--active');
-      }
+    buttonPlay.addEventListener('click', function () {
+      el.classList.remove('is-close');
+      el.classList.add('is-open');
+      el.querySelector('iframe').src = `${el.querySelector('iframe').src}&autoplay=1&mute=0`;
     });
-  }
+  });
 };
 
-export {accordion};
+export {playVideo};

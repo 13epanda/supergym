@@ -1,6 +1,7 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {membership} from './modules/membership';
+import {playVideo} from './modules/video';
 
 // ---------------------------------
 
@@ -13,6 +14,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
   // Modules
   // ---------------------------------
+  playVideo();
   membership();
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
