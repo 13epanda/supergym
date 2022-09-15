@@ -1,9 +1,9 @@
 .container {
   width: 100%;
-  padding: 0 calc(50vw - 640px);
+  padding: 0 calc(50vw - 580px);
 
   @include vp-1199 {
-    padding: 0 calc(50vw - 600px);
+    padding: 0 calc(50vw - 339px);
   }
 
   @include vp-767 {
