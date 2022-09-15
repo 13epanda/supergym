@@ -7,18 +7,18 @@
 
   @include vp-1199 {
     padding-top: 100px;
-    padding-bottom: 100px;
+    padding-bottom: 70px;
     flex-wrap: wrap;
   }
 
   @include vp-767 {
-    padding-top: 68px;
+    padding: 68px 0 0;
   }
 }
 
 .gym__text {
   width: 355px;
-  padding-top: 50px;
+  padding: 50px calc(50vw - 145px) 0;
   margin-left: 60px;
   color: $color-sapphire;
 
@@ -81,6 +81,10 @@
   font-weight: 300;
   font-size: 16px;
   line-height: 24px;
+
+  @include vp-767 {
+    padding-right: 15px;
+  }
 }
 
 .gym__text p[data-visible-tablet] {
@@ -91,14 +95,16 @@
 
 .gym__gallery {
   position: relative;
+  margin-bottom: 114px;
 
   @include vp-1199 {
-    margin-top: 50px;
+    margin-top: 40px;
     width: 100%;
   }
 
   @include vp-767 {
-    margin-top: 40px;
+    margin-top: 26px;
+    margin-bottom: 70px;
   }
 }
 
@@ -163,6 +169,21 @@
   height: 100%;
   background-color: $color-dark-cerulean-2;
   opacity: 0.5;
+}
+
+.gym__preview img {
+  width: 364px;
+  height: 228px;
+
+  @include vp-1199 {
+    width: 266px;
+    height: 167px;
+  }
+
+  @include vp-767 {
+    width: 100%;
+    height: 167px;
+  }
 }
 
 .gym__video iframe {
