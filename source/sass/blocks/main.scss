@@ -155,10 +155,10 @@
 .main__social li {
   list-style-type: none;
   margin-bottom: 10px;
-}
 
-.main__social li:last-child {
-  margin-bottom: 38px;
+  &:last-child {
+    margin-bottom: 38px;
+  }
 }
 
 .main__social a {
@@ -171,13 +171,14 @@
   text-align: right;
   text-transform: uppercase;
   color: $color-default-white;
-}
 
-.main__social a:hover,
-.main__social a:focus {
-  color: $color-black-russian;
-}
+  &:hover,
+  &:focus {
+    outline: none;
+    color: $color-black-russian;
+  }
 
-.main__social a:active {
-  color: $color-sapphire;
+  &:active {
+    color: $color-sapphire;
+  }
 }

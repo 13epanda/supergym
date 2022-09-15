@@ -55,9 +55,11 @@
   &:hover,
   &:focus {
     color: $color-black-russian;
+    outline: none;
   }
 
   &:active {
     color: $color-sapphire;
+    outline: none;
   }
 }

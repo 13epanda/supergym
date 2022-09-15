@@ -1052,17 +1052,14 @@ button,
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: #ffffff;
+  cursor: pointer;
 }
 
 .btn-primary:hover,
 .btn-primary:focus {
   background-color: #ffffff;
   color: #1c3374;
-}
-
-.btn-primary:active {
-  background: -o-linear-gradient(352.95deg, #ed0233 17.6%, #003eb7 95.31%);
-  background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
+  outline: none;
 }
 
 .btn-second {
@@ -1123,6 +1120,12 @@ button,
   box-sizing: content-box;
   -webkit-box-shadow: rgba(0, 61, 133, 0.2) 0 0 0 2px, rgba(184, 0, 39, 0.2) 0 0 0 2px;
   box-shadow: rgba(0, 61, 133, 0.2) 0 0 0 2px, rgba(184, 0, 39, 0.2) 0 0 0 2px;
+}
+
+.btn-video:hover,
+.btn-video:focus,
+.btn-video:active {
+  outline: none;
 }
 
 .modal {
@@ -1269,10 +1272,12 @@ button,
 .header a:hover,
 .header a:focus {
   color: #030a1a;
+  outline: none;
 }
 
 .header a:active {
   color: #102654;
+  outline: none;
 }
 
 .main {
@@ -1403,6 +1408,7 @@ button,
 
 .main__social a:hover,
 .main__social a:focus {
+  outline: none;
   color: #030a1a;
 }
 

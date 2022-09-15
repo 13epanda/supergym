@@ -30,6 +30,7 @@
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: $color-default-white;
+  cursor: pointer;
 
   @include vp-1199 {
     width: 183px;
@@ -43,10 +44,7 @@
   &:focus {
     background-color: $color-default-white;
     color: $color-resolution-blue;
-  }
-
-  &:active {
-    background: linear-gradient(97.05deg, $color-torch-red 17.6%, $color-cobalt 95.31%);
+    outline: none;
   }
 }
 
@@ -97,6 +95,12 @@
   @include vp-1199 {
     width: 52px;
     height: 52px;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    outline: none;
   }
 }
 
