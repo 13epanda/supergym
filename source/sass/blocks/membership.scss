@@ -1,6 +1,8 @@
 .membership {
+  position: relative;
   padding-top: 120px;
   padding-bottom: 120px;
+  overflow: hidden;
   background-color: $color-ghost-white;
 
   @include vp-1199 {
@@ -70,6 +72,7 @@
   &:hover,
   &:focus {
     color: $color-sapphire;
+    outline: none;
   }
 
   @include vp-767 {
@@ -111,6 +114,11 @@
   }
 }
 
+.membership__list {
+  position: relative;
+  z-index: 1;
+}
+
 .membership__categories {
   padding-inline-start: 0;
   margin-block-start: 0;
@@ -147,8 +155,7 @@
     margin-bottom: 0;
   }
 
-  &:hover,
-  &:focus {
+  &:hover {
     border-image-source: linear-gradient(90deg, rgba(209, 10, 66, 1) 0%, rgba(0, 53, 159, 1) 75%);
     border-image-width: 7px;
     border-image-repeat: stretch;
@@ -221,4 +228,27 @@
 
 .membership__category .btn-second {
   margin: 0 auto;
+}
+
+.membership__weight {
+  position: absolute;
+  bottom: -70px;
+  right: -105px;
+  width: 321px;
+  height: 384px;
+  transform: rotate(-200deg);
+
+  @include vp-1199 {
+    bottom: -225px;
+    width: 289px;
+    height: 345px;
+  }
+
+  @include vp-767 {
+    display: none;
+  }
+}
+
+.membership__weight img {
+  object-fit: contain;
 }
