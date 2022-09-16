@@ -1079,7 +1079,6 @@ button,
   margin-top: 0;
   margin-bottom: 0;
   padding-bottom: 13px;
-  border-bottom: 1px solid #ffffff;
   font-family: "RobotoCondensed", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -1122,6 +1121,14 @@ button,
   font-size: 40px;
   line-height: 55px;
   color: #ffffff;
+}
+
+.promo__date,
+.promo__time {
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  border-top: 1px solid #ffffff;
 }
 
 .promo__description {

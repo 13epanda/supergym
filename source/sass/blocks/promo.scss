@@ -52,7 +52,6 @@
   margin-top: 0;
   margin-bottom: 0;
   padding-bottom: 13px;
-  border-bottom: 1px solid $color-default-white;
   font-family: $ff-roboto;
   font-style: normal;
   font-weight: 400;
@@ -106,6 +105,12 @@
     font-size: 24px;
     line-height: 36px;
   }
+}
+
+.promo__date,
+.promo__time {
+  width: min-content;
+  border-top: 1px solid $color-default-white;
 }
 
 .promo__description {
