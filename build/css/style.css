@@ -669,7 +669,7 @@ button,
 
 .gym__text {
   width: 355px;
-  padding: 50px calc(50vw - 145px) 0;
+  padding-top: 50px;
   margin-left: 60px;
   color: #102654;
 }
@@ -1050,7 +1050,7 @@ button,
 
 .promo__content {
   padding: 87px 78px;
-  width: 500px;
+  min-width: 500px;
   min-height: 500px;
   background-color: #ed0233;
   display: -ms-grid;
@@ -1060,19 +1060,67 @@ button,
   -webkit-column-gap: 50px;
   -moz-column-gap: 50px;
   column-gap: 50px;
-  row-gap: 32px;
 }
 
 .promo h2 {
   -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
-  grid-row: 1/3;
+  -ms-grid-row-span: 4;
+  grid-row: 1/5;
   margin-top: 0;
   margin-bottom: 0;
   font-family: "BebasNeue", "Arial", sans-serif;
   font-size: 90px;
   line-height: 90px;
   letter-spacing: 0.03em;
+  color: #ffffff;
+}
+
+.promo__title {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 13px;
+  border-bottom: 1px solid #ffffff;
+  font-family: "RobotoCondensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: #ffffff;
+}
+
+.promo__date {
+  width: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.promo__date p {
+  margin-right: 7px;
+}
+
+.promo__date span {
+  margin-top: 10px;
+  font-family: "RobotoCondensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #ffffff;
+}
+
+.promo__date p,
+.promo__time {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: "RobotoCondensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 55px;
   color: #ffffff;
 }
 
@@ -1085,14 +1133,16 @@ button,
   color: #ffffff;
 }
 
-.promo__btn {
+.promo__content .promo__btn {
+  margin: 0;
   grid-column: 1/-1;
   width: 100%;
 }
 
 .promo__image {
   width: 660px;
-  height: 100%;
+  height: auto;
+  background-color: #003eb7;
 }
 
 .promo__image img {
@@ -1610,6 +1660,43 @@ button,
     height: 345px;
   }
 
+  .promo__content {
+    -ms-grid-columns: 1fr 56px;
+    grid-template-columns: 1fr 56px;
+    padding: 51px 45px;
+    min-width: 292px;
+    min-height: 292px;
+    -webkit-column-gap: 29px;
+    -moz-column-gap: 29px;
+    column-gap: 29px;
+  }
+
+  .promo h2 {
+    font-size: 52px;
+    line-height: 52px;
+  }
+
+  .promo__title {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .promo__date span {
+    font-size: 10px;
+    line-height: 15px;
+  }
+
+  .promo__date p,
+  .promo__time {
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .promo__description {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
   .btn-primary {
     width: 183px;
   }
@@ -1684,6 +1771,7 @@ button,
   .gym__text {
     width: 100%;
     margin: 0;
+    padding: 50px calc(50vw - 145px) 0;
     text-align: left;
   }
 
@@ -1790,6 +1878,19 @@ button,
 
   .membership__weight {
     display: none;
+  }
+
+  .promo {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  .promo__content {
+    width: 100%;
+  }
+
+  .promo__image {
+    width: 100%;
   }
 
   .btn-primary {
