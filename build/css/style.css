@@ -2009,6 +2009,8 @@ button,
 }
 
 .gym__video iframe {
+  width: 364px;
+  height: 228px;
   border: none;
   outline: none;
 }
