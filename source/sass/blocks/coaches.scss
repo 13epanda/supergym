@@ -1,54 +1,157 @@
-.coaches {
-
-}
-
 .coaches h2 {
   margin-top: 0;
   margin-bottom: 53px;
-  font-size: $ff-bebas-neue;
+  font-family: $ff-bebas-neue;
   font-size: 49px;
   line-height: 49px;
   letter-spacing: 0.03em;
   color: $color-sapphire;
 }
 
+.coaches__wrapper {
+  position: relative;
+  width: 1272px;
+  margin: 0 auto;
+
+  @include vp-1199 {
+    width: 678px;
+  }
+}
+
 .coaches__slider {
-  padding: 0 calc(50vw - 636px);
+  overflow: hidden;
+  width: 1160px;
+  margin: auto;
+
+  @include vp-1199 {
+    width: 566px;
+  }
 }
 
 .coaches__list {
-
+  padding-inline-start: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
 }
 
 .coaches__item {
   list-style-type: none;
   position: relative;
   width: 260px;
+  height: auto;
   min-height: 294px;
-  align-items: center;
+  padding: 58px 46px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+
+  @include vp-1199 {
+    width: 268px;
+  }
+}
+
+.coaches__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba($color-sapphire, 0.89);
 }
 
 .coaches__item h3 {
-  position: absolute;
-  right: 0;
-  bottom: 30px;
+  position: relative;
+  width: 100%;
+  margin-top: auto;
+  margin-bottom: 0;
   font-family: $ff-roboto;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 27px;
+  color: $color-default-white;
+  text-align: center;
+  z-index: 1;
 }
 
 .coaches__photo {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
+  background-color: $color-shambray;
 }
 
 .coaches__photo img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 
 .coaches__description {
   display: none;
+  position: relative;
+  z-index: 1;
 }
 
+.coaches__description span {
+  display: block;
+  font-family: $ff-roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: $color-spindle;
+  text-align: center;
+}
+
+.coaches__about {
+  padding-inline-start: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-top: 45px;
+}
+
+.coaches__about li {
+  list-style-type: disc;
+  margin-bottom: 24px;
+  font-family: $ff-roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: $color-default-white;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.coaches__item:hover .coaches__bg,
+.coaches__item:hover h3,
+.coaches__item:hover .coaches__description {
+  z-index: 1;
+
+  @include vp-1199 {
+    z-index: auto;
+  }
+}
+
+.coaches__item:hover h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.coaches__item:hover .coaches__description {
+  display: block;
+}
+
+.coaches__wrapper .swiper-button-prev {
+  left: 0;
+}
+
+.coaches__wrapper .swiper-button-next {
+  right: 0;
+}
