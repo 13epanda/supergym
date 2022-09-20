@@ -2577,6 +2577,14 @@ button,
   display: block;
 }
 
+.coaches__wrapper .swiper-button-next,
+.coaches__wrapper .swiper-button-prev {
+  height: 100%;
+  width: 16px;
+  top: 0;
+  margin: 0;
+}
+
 /* @media (hover: hover), screen and (min-width: 0\0) {
   &:hover,
   &:focus {
@@ -2819,6 +2827,13 @@ button,
     margin-bottom: 94px;
   }
 
+  .coaches h2 {
+    margin-bottom: 40px;
+    font-size: 42px;
+    line-height: 42px;
+    text-align: center;
+  }
+
   .coaches__wrapper {
     width: 678px;
   }
@@ -2829,12 +2844,11 @@ button,
 
   .coaches__item {
     width: 268px;
+    padding: 55px 40px 24px 46px;
   }
 
-  .coaches__item:hover .coaches__bg,
-  .coaches__item:hover h3,
-  .coaches__item:hover .coaches__description {
-    z-index: auto;
+  .coaches__item:hover h3 {
+    margin-left: -20px;
   }
 }
 
@@ -3039,5 +3053,28 @@ button,
   .coaches {
     margin-top: 68px;
     margin-bottom: 68px;
+  }
+
+  .coaches h2 {
+    margin-bottom: 42px;
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  .coaches__wrapper {
+    width: 100%;
+  }
+
+  .coaches__slider {
+    width: 226px;
+  }
+
+  .coaches__item {
+    height: 274px;
+    padding: 45px 27px 24px 25px;
+  }
+
+  .coaches__item:hover h3 {
+    margin-left: 0;
   }
 }

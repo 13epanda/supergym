@@ -21,6 +21,19 @@
   line-height: 49px;
   letter-spacing: 0.03em;
   color: $color-sapphire;
+
+  @include vp-1199 {
+    margin-bottom: 40px;
+    font-size: 42px;
+    line-height: 42px;
+    text-align: center;
+  }
+
+  @include vp-767 {
+    margin-bottom: 42px;
+    font-size: 32px;
+    line-height: 32px;
+  }
 }
 
 .coaches__wrapper {
@@ -31,6 +44,10 @@
   @include vp-1199 {
     width: 678px;
   }
+
+  @include vp-767 {
+    width: 100%;
+  }
 }
 
 .coaches__slider {
@@ -40,6 +57,10 @@
 
   @include vp-1199 {
     width: 566px;
+  }
+
+  @include vp-767 {
+    width: 226px;
   }
 }
 
@@ -64,6 +85,12 @@
 
   @include vp-1199 {
     width: 268px;
+    padding: 55px 40px 24px 46px;
+  }
+
+  @include vp-767 {
+    height: 274px;
+    padding: 45px 27px 24px 25px;
   }
 }
 
@@ -152,17 +179,29 @@
 .coaches__item:hover h3,
 .coaches__item:hover .coaches__description {
   z-index: 1;
-
-  @include vp-1199 {
-    z-index: auto;
-  }
 }
 
 .coaches__item:hover h3 {
   margin-top: 0;
   margin-bottom: 0;
+
+  @include vp-1199 {
+    margin-left: -20px;
+  }
+
+  @include vp-767 {
+    margin-left: 0;
+  }
 }
 
 .coaches__item:hover .coaches__description {
   display: block;
+}
+
+.coaches__wrapper .swiper-button-next,
+.coaches__wrapper .swiper-button-prev {
+  height: 100%;
+  width: 16px;
+  top: 0;
+  margin: 0;
 }
