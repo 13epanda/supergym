@@ -1561,6 +1561,8 @@ button,
   text-transform: uppercase;
   color: #ffffff;
   cursor: pointer;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .btn-primary:hover,
@@ -2045,6 +2047,7 @@ button,
   position: relative;
   padding-top: 120px;
   padding-bottom: 85px;
+  margin-bottom: 120px;
   background-color: #f8f9fc;
 }
 
@@ -2295,8 +2298,8 @@ button,
 }
 
 .promo {
-  margin-top: 60px;
-  margin-bottom: 60px;
+  margin-top: 120px;
+  margin-bottom: 120px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2315,8 +2318,10 @@ button,
   background-color: #ed0233;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 92px;
-  grid-template-columns: 1fr 92px;
+  -ms-grid-columns: 200px 92px;
+  grid-template-columns: 200px 92px;
+  -ms-grid-rows: 25px 70px 25px 50px;
+  grid-template-rows: 25px 70px 25px 50px;
   -webkit-column-gap: 50px;
   -moz-column-gap: 50px;
   column-gap: 50px;
@@ -2336,14 +2341,14 @@ button,
 }
 
 .promo__title {
+  padding-bottom: 5px;
   margin-top: 0;
   margin-bottom: 0;
-  padding-bottom: 13px;
   font-family: "RobotoCondensed", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
-  line-height: 27px;
+  line-height: 18px;
   color: #ffffff;
 }
 
@@ -2362,12 +2367,12 @@ button,
 }
 
 .promo__date span {
-  margin-top: 10px;
+  margin-top: 7px;
   font-family: "RobotoCondensed", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 21px;
+  line-height: 18px;
   color: #ffffff;
 }
 
@@ -2392,6 +2397,8 @@ button,
 }
 
 .promo__description {
+  margin-top: 18px;
+  margin-bottom: 46px;
   grid-column: 1/-1;
   font-family: "RobotoCondensed", "Arial", sans-serif;
   font-weight: 400;
@@ -2404,6 +2411,7 @@ button,
   margin: 0;
   grid-column: 1/-1;
   width: 100%;
+  min-height: 67px;
 }
 
 .promo__image {

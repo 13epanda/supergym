@@ -1,6 +1,6 @@
 .promo {
-  margin-top: 60px;
-  margin-bottom: 60px;
+  margin-top: 120px;
+  margin-bottom: 120px;
   display: flex;
   justify-content: flex-start;
   align-items: stretch;
@@ -16,7 +16,8 @@
   min-height: 500px;
   background-color: $color-torch-red;
   display: grid;
-  grid-template-columns: 1fr 92px;
+  grid-template-columns: 200px 92px;
+  grid-template-rows: 25px 70px 25px 50px;
   column-gap: 50px;
 
   @include vp-1199 {
@@ -49,14 +50,14 @@
 }
 
 .promo__title {
+  padding-bottom: 5px;
   margin-top: 0;
   margin-bottom: 0;
-  padding-bottom: 13px;
   font-family: $ff-roboto;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
-  line-height: 27px;
+  line-height: 18px;
   color: $color-default-white;
 
   @include vp-1199 {
@@ -76,12 +77,12 @@
 }
 
 .promo__date span {
-  margin-top: 10px;
+  margin-top: 7px;
   font-family: $ff-roboto;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 21px;
+  line-height: 18px;
   color: $color-default-white;
 
   @include vp-1199 {
@@ -114,6 +115,8 @@
 }
 
 .promo__description {
+  margin-top: 18px;
+  margin-bottom: 46px;
   grid-column: 1/-1;
   font-family: $ff-roboto;
   font-weight: 400;
@@ -131,6 +134,7 @@
   margin: 0;
   grid-column: 1/-1;
   width: 100%;
+  min-height: 67px;
 }
 
 .promo__image {
