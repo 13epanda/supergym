@@ -5,7 +5,14 @@
   justify-content: flex-start;
   align-items: stretch;
 
+  @include vp-1199 {
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+
   @include vp-767 {
+    margin-top: 70px;
+    margin-bottom: 70px;
     flex-wrap: wrap;
   }
 }
@@ -22,7 +29,8 @@
 
   @include vp-1199 {
     grid-template-columns: 1fr 56px;
-    padding: 51px 45px;
+    grid-template-rows: 20px 33px 20px 33px;
+    padding: 48px 45px;
     min-width: 292px;
     min-height: 292px;
     column-gap: 29px;
@@ -74,6 +82,10 @@
 
 .promo__date p {
   margin-right: 7px;
+
+  @include vp-1199 {
+    margin-right: 3px;
+  }
 }
 
 .promo__date span {
@@ -86,8 +98,9 @@
   color: $color-default-white;
 
   @include vp-1199 {
+    margin-top: 0;
     font-size: 10px;
-    line-height: 15px;
+    line-height: 14px;
   }
 }
 
@@ -104,7 +117,7 @@
 
   @include vp-1199 {
     font-size: 24px;
-    line-height: 36px;
+    line-height: 28px;
   }
 }
 
@@ -125,6 +138,8 @@
   color: $color-default-white;
 
   @include vp-1199 {
+    margin-top: 0;
+    margin-bottom: 28px;
     font-size: 12px;
     line-height: 18px;
   }
@@ -135,6 +150,12 @@
   grid-column: 1/-1;
   width: 100%;
   min-height: 67px;
+
+  @include vp-1199 {
+    min-height: 26px;
+    font-size: 10px;
+    line-height: 12px;
+  }
 }
 
 .promo__image {
@@ -144,6 +165,7 @@
 
   @include vp-767 {
     width: 100%;
+    height: 292px;
   }
 }
 

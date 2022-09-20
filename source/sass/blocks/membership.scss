@@ -7,7 +7,8 @@
 
   @include vp-1199 {
     padding-top: 95px;
-    padding-bottom: 63px;
+    padding-bottom: 60px;
+    margin-bottom: 100px;
   }
 
   @include vp-767 {
@@ -177,7 +178,7 @@
 .membership__link {
   display: block;
   padding: 55px 70px;
-  min-width: 360px;
+  width: 360px;
   font-family: $ff-roboto;
   font-style: normal;
   text-align: center;
@@ -189,7 +190,8 @@
   @include vp-1199 {
     padding-top: 60px;
     padding-bottom: 58px;
-    min-width: 442px;
+    width: 442px;
+    margin: 0 auto;
   }
 
   @include vp-767 {

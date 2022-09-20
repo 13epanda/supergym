@@ -35,6 +35,8 @@
 
   @include vp-1199 {
     width: 183px;
+    min-height: 62px;
+    padding: 12px 22px;
   }
 
   @include vp-767 {

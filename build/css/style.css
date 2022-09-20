@@ -2170,7 +2170,7 @@ button,
 .membership__link {
   display: block;
   padding: 55px 70px;
-  min-width: 360px;
+  width: 360px;
   font-family: "RobotoCondensed", "Arial", sans-serif;
   font-style: normal;
   text-align: center;
@@ -2591,6 +2591,8 @@ button,
 
   .btn-primary {
     width: 183px;
+    min-height: 62px;
+    padding: 12px 22px;
   }
 
   .btn-video {
@@ -2704,7 +2706,8 @@ button,
 
   .membership {
     padding-top: 95px;
-    padding-bottom: 63px;
+    padding-bottom: 60px;
+    margin-bottom: 100px;
   }
 
   .membership h2 {
@@ -2743,7 +2746,8 @@ button,
   .membership__link {
     padding-top: 60px;
     padding-bottom: 58px;
-    min-width: 442px;
+    width: 442px;
+    margin: 0 auto;
   }
 
   .membership__weight {
@@ -2753,10 +2757,17 @@ button,
     height: 345px;
   }
 
+  .promo {
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+
   .promo__content {
     -ms-grid-columns: 1fr 56px;
     grid-template-columns: 1fr 56px;
-    padding: 51px 45px;
+    -ms-grid-rows: 20px 33px 20px 33px;
+    grid-template-rows: 20px 33px 20px 33px;
+    padding: 48px 45px;
     min-width: 292px;
     min-height: 292px;
     -webkit-column-gap: 29px;
@@ -2774,20 +2785,33 @@ button,
     line-height: 18px;
   }
 
+  .promo__date p {
+    margin-right: 3px;
+  }
+
   .promo__date span {
+    margin-top: 0;
     font-size: 10px;
-    line-height: 15px;
+    line-height: 14px;
   }
 
   .promo__date p,
   .promo__time {
     font-size: 24px;
-    line-height: 36px;
+    line-height: 28px;
   }
 
   .promo__description {
+    margin-top: 0;
+    margin-bottom: 28px;
     font-size: 12px;
     line-height: 18px;
+  }
+
+  .promo__content .promo__btn {
+    min-height: 26px;
+    font-size: 10px;
+    line-height: 12px;
   }
 
   .coaches {
@@ -2997,6 +3021,8 @@ button,
   }
 
   .promo {
+    margin-top: 70px;
+    margin-bottom: 70px;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
   }
@@ -3007,6 +3033,7 @@ button,
 
   .promo__image {
     width: 100%;
+    height: 292px;
   }
 
   .coaches {
