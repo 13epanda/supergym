@@ -1,4 +1,14 @@
 const createSwipers = () => {
+  let swiperFeedback = new Swiper('.feedback__slider', {
+    slidesPerView: 1,
+    spaceBetween: 0,
+    loop: true,
+    loopFillGroupWithBlank: true,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
   let swiperCoaches = new Swiper('.coaches__slider', {
     slidesPerView: 1,
     spaceBetween: 0,
@@ -23,7 +33,7 @@ const createSwipers = () => {
       prevEl: '.swiper-button-prev',
     },
   });
-  return swiperCoaches;
+
 };
 
 export {createSwipers};
