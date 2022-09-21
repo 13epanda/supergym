@@ -1,8 +1,8 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {membership} from './modules/membership';
-import {playVideo} from './modules/video';
-import {createSwipers} from "./modules/swiper";
+import {playYoutubeVideo} from './modules/youtube-video';
+import {createSwipers} from './modules/swiper';
 
 // ---------------------------------
 
@@ -15,7 +15,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
   // Modules
   // ---------------------------------
-  playVideo();
+  playYoutubeVideo();
   membership();
 
 

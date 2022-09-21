@@ -1,6 +1,6 @@
 const allVideo = document.querySelectorAll('[data-video]');
 
-const playVideo = () => {
+const playYoutubeVideo = () => {
   allVideo.forEach((el) => {
     const buttonPlay = el.querySelector('[data-play]');
     const urlVideo = el.getAttribute('data-url');
@@ -11,13 +11,15 @@ const playVideo = () => {
       el.classList.remove('is-close');
       el.classList.add('is-open');
       let iframe = document.createElement('iframe');
-      let iframe_url = 'https://www.youtube.com/embed/'+urlVideo+'?autoplay=1&mute=0';
-      if(el.getAttribute('data-params'))iframe_url+='&'+el.getAttribute('data-params');
-      iframe.setAttribute('src',iframe_url);
-      iframe.setAttribute('frameborder','0');
+      let iframeUrl = 'https://www.youtube.com/embed/' + urlVideo + '?autoplay=1&mute=0';
+      if (el.getAttribute('data-params')) {
+        iframeUrl += '&' + el.getAttribute('data-params');
+      }
+      iframe.setAttribute('src', iframeUrl);
+      iframe.setAttribute('frameborder', '0');
       el.appendChild(iframe);
     });
   });
 };
 
-export {playVideo};
+export {playYoutubeVideo};
