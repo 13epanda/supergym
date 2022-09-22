@@ -143,6 +143,7 @@
 
   &:hover,
   &:focus {
+    outline: none;
     background-color: $color-shambray;
   }
 }

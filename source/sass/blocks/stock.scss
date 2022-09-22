@@ -115,6 +115,7 @@
 
   &:hover,
   &:focus {
+    outline: none;
     letter-spacing: 0.3em;
   }
 }

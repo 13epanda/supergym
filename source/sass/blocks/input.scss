@@ -1,0 +1,43 @@
+/* TEXT */
+.input-text {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: stretch;
+}
+
+.input-text input {
+  position: relative;
+  flex-grow: 1;
+  width: 100%;
+  padding-bottom: 10px;
+  height: 24px;
+  font-family: $ff-roboto;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: $color-default-white;
+  background: none;
+  border: none;
+  border-bottom: 1px solid $color-light-slate-grey;
+  box-sizing: border-box;
+  outline: none;
+
+  &:hover,
+  &:focus {
+    color: $color-shambray;
+  }
+}
+
+.input-text input::placeholder {
+  font-family: $ff-roboto;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: $color-default-white;
+}
+
+.input-text input:hover::placeholder,
+.input-text input:focus::placeholder {
+  color: $color-shambray;
+}

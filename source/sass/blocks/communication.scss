@@ -1,0 +1,179 @@
+.communication {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-wrap: nowrap;
+  box-sizing: border-box;
+
+  @include vp-1199 {
+    flex-wrap: wrap;
+  }
+}
+
+.communication__register,
+.communication__contacts {
+  padding-top: 60px;
+  padding-bottom: 65px;
+  width: 50%;
+
+  @include vp-1199 {
+    width: 100%;
+    padding: 67px calc(50vw - 253px);
+  }
+}
+
+.communication__register h2,
+.communication__contacts h2 {
+  margin-top: 0;
+  margin-bottom: 38px;
+  font-family: $ff-bebas-neue;
+  font-size: 49px;
+  line-height: 64px;
+  letter-spacing: 0.03em;
+  text-transform: lowercase;
+
+  @include vp-1199 {
+    font-size: 42px;
+    line-height: 42px;
+  }
+}
+
+.communication__register {
+  padding-right: 170px;
+  padding-left: calc(25vw - 240px);
+  background: $color-sapphire;
+}
+
+.communication__register h2 {
+  color: $color-default-white;
+}
+
+.communication__form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 30px;
+  row-gap: 24px;
+
+  @include vp-1199 {
+    width: 472px;
+    column-gap: 58px;
+  }
+}
+
+.communication__form .communication__button {
+  grid-column: 1/-1;
+  width: 100%;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.communication__contacts {
+  padding-left: 120px;
+  padding-right: calc(25vw - 290px);
+  border-top: 1px solid $color-light-slate-grey;
+}
+
+.communication__contacts h2 {
+  margin-bottom: 34px;
+  color: $color-sapphire;
+
+  @include vp-1199 {
+    margin-bottom: 38px;
+  }
+}
+
+.communication__list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  margin-left: 4px;
+
+  @include vp-1199 {
+    margin-left: 0;
+  }
+}
+
+.communication__item {
+  list-style-type: none;
+  margin-bottom: 17px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @include vp-1199 {
+    margin-bottom: 27px;
+  }
+}
+
+.communication__item dl {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.communication__item dt {
+  margin-bottom: 4px;
+  font-family: $ff-roboto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  color: $color-sapphire;
+
+  @include vp-1199 {
+    margin-bottom: 12px;
+    font-size: 20px;
+    line-height: 22px;
+  }
+}
+
+.communication__item dd {
+  margin-left: 0;
+  font-family: $ff-roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+
+  @include vp-1199 {
+    font-size: 18px;
+  }
+}
+
+.communication__office,
+.communication__link {
+  padding-inline-start: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+.communication__office {
+  width: 230px;
+
+  @include vp-1199 {
+    width: 268px;
+  }
+}
+
+
+
+.communication__link {
+  padding-left: 58px;
+  border-left: 1px solid $color-light-slate-grey;
+
+  @include vp-1199 {
+    padding-left: 47px;
+  }
+}
+
+.communication__link a {
+  &:hover,
+  &:focus {
+    outline: none;
+    color: $color-shambray;
+    text-decoration: underline;
+  }
+}

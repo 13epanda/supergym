@@ -194,6 +194,12 @@
   color: var(--swiper-navigation-color, var(--swiper-theme-color));
   background-color: transparent;
   border: none;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    background-color: #74819c;
+  }
 }
 .swiper-button-next {
   transform: rotate(-180deg);
