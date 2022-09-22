@@ -2770,12 +2770,13 @@ button,
 
 .stock h2 {
   margin-top: 0;
-  margin-bottom: 62px;
+  margin-bottom: 55px;
   font-family: "BebasNeue", "Arial", sans-serif;
   font-size: 49px;
   line-height: 49px;
   letter-spacing: 0.03em;
   color: #102654;
+  text-align: center;
 }
 
 .stock__list {
@@ -2813,7 +2814,7 @@ button,
   -ms-flex-pack: start;
   justify-content: flex-start;
   min-height: 211px;
-  padding: 35px;
+  padding: 30px 35px 35px;
   color: #1c3374;
   border: 1px solid transparent;
   border-image-source: linear-gradient(90deg, #d10a42 0%, #00359f 75%);
@@ -2833,7 +2834,7 @@ button,
 }
 
 .stock__item p:first-child {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   font-weight: 700;
   font-size: 26px;
   line-height: 26px;
@@ -2841,7 +2842,7 @@ button,
 
 .stock__item a {
   margin-top: auto;
-  padding-bottom: 5px;
+  font-family: "RobotoCondensed", "Arial", sans-serif;
   font-size: 12px;
   line-height: 14px;
   font-weight: 700;
@@ -2875,7 +2876,7 @@ button,
   border: none;
 }
 
-.stock__item--main .stock__content {
+.stock__content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2890,19 +2891,31 @@ button,
   -ms-flex-pack: start;
   justify-content: flex-start;
   width: 50%;
-  padding: 45px;
+  padding: 43px 45px 46px;
   background-color: #ed0233;
   color: #ffffff;
+}
+
+.stock__item--main p {
+  margin-bottom: 23px;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.stock__item--main p:first-child {
+  margin-bottom: 21px;
 }
 
 .stock__item--main span {
   display: block;
   width: 100%;
   font-size: 70px;
-  line-height: 80px;
+  line-height: 69px;
 }
 
 .stock__item--main a {
+  font-size: 14px;
+  line-height: 16px;
   color: #ffffff;
   border-bottom: 1px solid #ffffff;
 }
@@ -3490,10 +3503,9 @@ button,
   }
 
   .stock h2 {
-    margin-bottom: 50px;
+    margin-bottom: 42px;
     font-size: 42px;
     line-height: 42px;
-    text-align: center;
   }
 
   .stock__list {
@@ -3503,15 +3515,24 @@ button,
     row-gap: 30px;
   }
 
-  .stock__item--main {
-    grid-column: 1/-1;
+  .stock__item p:first-child {
+    margin-bottom: 9px;
   }
 
-  .stock__item--main .stock__content {
+  .stock__item--main {
+    grid-column: 1/-1;
+    height: 462px;
+  }
+
+  .stock__content {
     grid-row: auto;
-    width: 279px;
+    width: 305px;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+  }
+
+  .stock__item--main p:first-child {
+    margin-bottom: 22px;
   }
 
   .stock__img img {
@@ -3835,7 +3856,7 @@ button,
     flex-wrap: wrap;
   }
 
-  .stock__item--main .stock__content {
+  .stock__content {
     width: 100%;
     padding: 45px 50px;
     text-align: center;
