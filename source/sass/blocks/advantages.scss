@@ -1,15 +1,15 @@
 .advantages {
   margin-top: 120px;
   margin-bottom: 120px;
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 118px;
+  padding-bottom: 110px;
   background-color: $color-ghost-white;
 
   @include vp-1199 {
     margin-top: 100px;
     margin-bottom: 100px;
     padding-top: 100px;
-    padding-bottom: 100px;
+    padding-bottom: 95px;
   }
 
   @include vp-767 {
@@ -21,15 +21,16 @@
 
 .advantages h2 {
   margin-top: 0;
-  margin-bottom: 80px;
+  margin-bottom: 60px;
   font-family: $ff-bebas-neue;
   font-size: 49px;
   line-height: 49px;
   letter-spacing: 0.03em;
   color: $color-sapphire;
+  text-align: center;
 
   @include vp-1199 {
-    margin-bottom: 60px;
+    margin-bottom: 45px;
     font-size: 42px;
     line-height: 42px;
   }
@@ -49,10 +50,14 @@
   grid-template-columns: 1fr 240px 1fr;
   grid-template-rows: auto;
   column-gap: 60px;
+  width: 1040px;
+  margin: 0 auto;
 
   @include vp-1199 {
     grid-template-columns: 1fr 1fr;
-    row-gap: 50px;
+    row-gap: 45px;
+    column-gap: 25px;
+    width: 100%;
   }
 
   @include vp-767 {
@@ -64,9 +69,11 @@
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
+  min-height: 162px;
   border-bottom: 2px solid rgba($color-crimson, 0.2);
 
   @include vp-1199 {
+    min-height: auto;
     border-bottom: none;
   }
 
@@ -75,15 +82,8 @@
   }
 }
 
-.advantages__item--bottom {
-  margin-top: auto;
-  border: none;
-}
-
 .advantages__item dl {
-  margin-top: 0;
-  margin-right: 30px;
-  margin-bottom: 0;
+  margin: 0 32px 0 0;
 }
 
 .advantages__item dt {
@@ -96,9 +96,15 @@
   background-clip: text;
   -webkit-background-clip: text;
   background-image: linear-gradient(127.61deg, $color-crimson 0%, $color-cobalt-2 45.58%);
+
+  @include vp-1199 {
+    font-size: 58px;
+    line-height: 58px;
+  }
 }
 
 .advantages__item dd {
+  margin-top: -7px;
   margin-left: 0;
   font-family: $ff-roboto;
   font-style: normal;
@@ -120,10 +126,43 @@
   color: $color-sapphire;
 
   &:first-child {
-    margin-bottom: 20px;
+    margin-bottom: 8px;
     font-weight: 700;
     font-size: 22px;
     line-height: 33px;
+
+    @include vp-1199 {
+      margin-bottom: 0;
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+}
+
+.advantages__item--bottom {
+  align-items: flex-end;
+  min-height: 155px;
+  border: none;
+
+  @include vp-1199 {
+    margin-top: -5px;
+    min-height: auto;
+  }
+}
+
+.advantages__item--left dl {
+  margin-left: 24px;
+
+  @include vp-1199 {
+    margin-left: 0;
+  }
+}
+
+.advantages__item--left.advantages__item--bottom {
+  margin-left: -6px;
+
+  @include vp-1199 {
+    margin-left: 0;
   }
 }
 
@@ -134,14 +173,16 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  padding: 65px 34px;
+  padding: 55px 34px;
+  margin-top: 7px;
+  margin-bottom: 7px;
   background-color: $color-resolution-blue;
   color: $color-default-white;
 
   @include vp-1199 {
     grid-column: 1/-1;
     grid-row: auto;
-    padding: 45px 34px;
+    padding: 30px 34px 40px;
     width: 442px;
     margin: auto;
   }
@@ -154,11 +195,11 @@
 
 .advantages__item--major dl {
   margin-right: 0;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   text-align: center;
 
   @include vp-1199 {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
 
   @include vp-767 {
@@ -167,13 +208,15 @@
 }
 
 .advantages__item--major dt {
-  margin-bottom: 24px;
+  margin-bottom: 15px;
   font-size: 74px;
   line-height: 74px;
   color: $color-default-white;
 
   @include vp-1199 {
-    margin-bottom: 20px;
+    margin-bottom: 13px;
+    font-size: 74px;
+    line-height: 74px;
   }
 }
 
@@ -189,6 +232,11 @@
 }
 
 .advantages__item--major p {
+  line-height: 24px;
   text-align: center;
   color: $color-default-white;
+
+  @include vp-1199 {
+    width: 50%;
+  }
 }

@@ -1,7 +1,7 @@
 .membership {
   position: relative;
   padding-top: 120px;
-  padding-bottom: 85px;
+  padding-bottom: 80px;
   margin-bottom: 120px;
   background-color: $color-ghost-white;
 
@@ -177,7 +177,7 @@
 
 .membership__link {
   display: block;
-  padding: 55px 70px;
+  padding: 55px 70px 60px;
   width: 360px;
   font-family: $ff-roboto;
   font-style: normal;
@@ -251,14 +251,14 @@
 
 .membership__price p {
   position: absolute;
-  bottom: 10px;
+  bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
   margin-top: 0;
   margin-bottom: 0;
   font-weight: 700;
   font-size: 100px;
-  line-height: 150px;
+  line-height: 100px;
   color: $color-whisper;
   opacity: 0.48;
 
