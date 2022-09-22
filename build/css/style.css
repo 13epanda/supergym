@@ -2935,6 +2935,7 @@ button,
   list-style-type: none;
   position: relative;
   width: 556px;
+  height: 242px;
   padding: 62px 65px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2964,6 +2965,11 @@ button,
   height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
+}
+
+.feedback__text {
+  height: 100%;
+  overflow-y: auto;
 }
 
 .feedback__item h3 {
@@ -3659,6 +3665,7 @@ button,
   }
 
   .feedback__item {
+    height: 335px;
     padding: 40px 25px;
   }
 }
