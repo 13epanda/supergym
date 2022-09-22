@@ -5,8 +5,8 @@ const createSwipers = () => {
     loop: true,
     loopFillGroupWithBlank: true,
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: '.feedback__btn-next',
+      prevEl: '.feedback__btn-prev',
     },
   });
   let swiperCoaches = new Swiper('.coaches__slider', {
@@ -29,8 +29,8 @@ const createSwipers = () => {
     loop: true,
     loopFillGroupWithBlank: true,
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: '.coaches__btn-next',
+      prevEl: '.coaches__btn-prev',
     },
   });
 
