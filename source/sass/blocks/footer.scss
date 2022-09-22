@@ -1,0 +1,126 @@
+.footer {
+  padding-top: 44px;
+  padding-bottom: 44px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $color-black-russian;
+
+  @include vp-1199 {
+    padding-top: 45px;
+    padding-bottom: 44px;
+  }
+
+  @include vp-767 {
+    padding-top: 50px;
+    padding-bottom: 41px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+}
+
+.footer__logo svg {
+  @include vp-1199 {
+    width: 82px;
+    height: 17px;
+  }
+
+  @include vp-767 {
+    width: 68px;
+    height: 15px;
+  }
+}
+
+.footer__list {
+  padding-inline-start: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+
+  @include vp-767 {
+    margin-bottom: 28px;
+  }
+}
+
+.footer__item {
+  list-style-type: none;
+  margin-right: 40px;
+
+  @include vp-1199 {
+    margin-right: 30px;
+  }
+
+  @include vp-767 {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+
+  &:last-child {
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+}
+
+.footer__item a {
+  font-family: $ff-roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: $color-default-white;
+  text-decoration: none;
+
+  @include vp-767 {
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  &:hover,
+  &:focus {
+    outline: none;
+    color: $color-shambray;
+  }
+}
+
+.footer__social-list {
+  padding-inline-start: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+
+  @include vp-767 {
+    margin-bottom: 40px;
+  }
+}
+
+.footer__social {
+  list-style-type: none;
+  margin-right: 11px;
+  margin-bottom: 11px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.footer__social a {
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: $color-default-white;
+
+  &:hover,
+  &:focus {
+    background-color: $color-shambray;
+  }
+}
