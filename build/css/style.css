@@ -2073,6 +2073,7 @@ button,
 .gym__photo {
   width: 660px;
   height: 401px;
+  background-color: #74819c;
 }
 
 .gym__photo img {
