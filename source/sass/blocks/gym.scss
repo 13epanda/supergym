@@ -193,6 +193,11 @@
   height: 228px;
   border: none;
   outline: none;
+
+  @include vp-767 {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 [data-video].is-close iframe {

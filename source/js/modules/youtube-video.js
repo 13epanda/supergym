@@ -17,6 +17,7 @@ const playYoutubeVideo = () => {
       iframe.setAttribute('src', iframeUrl);
       iframe.setAttribute('frameborder', '0');
       el.appendChild(iframe);
+      el.contentWindow.location.reload(true);
     });
   });
 };
