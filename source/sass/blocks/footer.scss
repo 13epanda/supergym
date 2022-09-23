@@ -12,7 +12,7 @@
   }
 
   @include vp-767 {
-    padding-top: 50px;
+    padding-top: 48px;
     padding-bottom: 41px;
     flex-direction: column;
     align-items: flex-start;
@@ -62,7 +62,8 @@
   }
 
   @include vp-767 {
-    margin-bottom: 28px;
+    margin-right: 0;
+    margin-bottom: 16px;
     column-count: 2;
     column-fill: auto;
     justify-content: flex-start;
@@ -79,8 +80,13 @@
 
   @include vp-767 {
     margin-right: 0;
-    margin-bottom: 28px;
+    margin-bottom: 20px;
     width: 50%;
+    box-sizing: border-box;
+
+    &:nth-child(2n) {
+      padding-left: 15px;
+    }
   }
 
   &:last-child {
@@ -128,6 +134,7 @@
   }
 
   @include vp-767 {
+    margin-right: 0;
     margin-bottom: 40px;
     justify-content: flex-start;
     width: 100%;

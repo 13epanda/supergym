@@ -1,17 +1,15 @@
 .feedback {
   width: 720px;
   margin: 120px auto;
-  padding: 0;
 
   @include vp-1199 {
     margin-top: 94px;
     margin-bottom: 100px;
-    padding: 0;
   }
 
   @include vp-767 {
     margin-top: 68px;
-    margin-bottom: 68px;
+    margin-bottom: 70px;
     width: 100%;
   }
 }
@@ -80,7 +78,7 @@
 
   @include vp-767 {
     height: 335px;
-    padding: 40px 25px;
+    padding: 48px 25px;
   }
 }
 
@@ -95,8 +93,11 @@
 
   @include vp-767 {
     position: absolute;
-    top: 40px;
-    left: 25px;
+    top: 42px;
+    left: 41px;
+    margin-top: 0;
+    width: 68px;
+    height: 68px;
   }
 }
 
@@ -127,7 +128,8 @@
 
   @include vp-767 {
     padding-left: 100px;
-    margin-bottom: 34px;
+    margin-bottom: 16px;
+    line-height: 28px;
   }
 }
 
@@ -142,7 +144,11 @@
   font-family: $ff-roboto;
   font-weight: 400;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 23px;
+
+  @include vp-767 {
+    text-align: center;
+  }
 }
 
 .feedback__btn-next,
@@ -153,22 +159,14 @@
   margin: 0;
 
   @include vp-767 {
-    width: auto;
+    width: calc(50vw - 113px)
   }
 }
 
 .feedback__btn-next {
   right: 0;
-
-  @include vp-767 {
-    transform: translateX(50%) rotate(-180deg);
-  }
 }
 
 .feedback__btn-prev {
   left: 0;
-
-  @include vp-767 {
-    transform: translateX(-50%);
-  }
 }

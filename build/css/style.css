@@ -2153,6 +2153,7 @@ button,
   padding-bottom: 80px;
   margin-bottom: 120px;
   background-color: #f8f9fc;
+  overflow-x: clip;
 }
 
 .membership h2 {
@@ -2385,15 +2386,20 @@ button,
   opacity: 0.7;
 }
 
-.membership__weight {
+.membership::after {
   position: absolute;
-  bottom: -70px;
+  content: '';
+  bottom: -95px;
   right: -105px;
   width: 321px;
   height: 384px;
   -webkit-transform: rotate(-210deg);
   -ms-transform: rotate(-210deg);
   transform: rotate(-210deg);
+  background-image: url("../img/desktop/weight.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .membership__weight img {
@@ -2697,19 +2703,23 @@ button,
 .coaches__btn-next,
 .coaches__btn-prev {
   height: 100%;
-  width: auto;
+  width: 60px;
   top: 0;
   margin: 0;
 }
 
 .coaches__btn-next {
-  right: -8px;
-  padding-right: 40px;
+  right: 0;
+  -webkit-transform: translateX(50%) rotate(-180deg);
+  -ms-transform: translateX(50%) rotate(-180deg);
+  transform: translateX(50%) rotate(-180deg);
 }
 
 .coaches__btn-prev {
-  left: -8px;
-  padding-right: 40px;
+  left: 0;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 
 .advantages {
@@ -3050,7 +3060,6 @@ button,
 .feedback {
   width: 720px;
   margin: 120px auto;
-  padding: 0;
 }
 
 .feedback h2 {
@@ -3153,7 +3162,7 @@ button,
   font-family: "RobotoCondensed", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 23px;
 }
 
 .feedback__btn-next,
@@ -3622,7 +3631,7 @@ button,
     margin: 0 auto;
   }
 
-  .membership__weight {
+  .membership::after {
     bottom: -75px;
     right: -5px;
     width: 289px;
@@ -3839,7 +3848,6 @@ button,
   .feedback {
     margin-top: 94px;
     margin-bottom: 100px;
-    padding: 0;
   }
 
   .feedback h2 {
@@ -3974,6 +3982,7 @@ button,
 
   .main__text {
     margin-top: 0;
+    margin-right: 0;
     width: 100%;
   }
 
@@ -3998,7 +4007,7 @@ button,
   }
 
   .gym {
-    padding: 68px 0 0;
+    padding: 17px 0 0;
   }
 
   .gym__text {
@@ -4050,6 +4059,7 @@ button,
   .membership {
     padding-top: 68px;
     padding-bottom: 35px;
+    margin-bottom: 70px;
   }
 
   .membership h2 {
@@ -4109,7 +4119,7 @@ button,
     height: 33px;
   }
 
-  .membership__weight {
+  .membership::after {
     display: none;
   }
 
@@ -4157,10 +4167,27 @@ button,
     margin-left: 0;
   }
 
+  .coaches__btn-next,
+  .coaches__btn-prev {
+    width: calc(50vw - 113px);
+  }
+
+  .coaches__btn-next {
+    -webkit-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+  }
+
+  .coaches__btn-prev {
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+  }
+
   .advantages {
     margin-top: 70px;
     margin-bottom: 70px;
-    padding: 70px 0;
+    padding: 70px 0 40px;
   }
 
   .advantages h2 {
@@ -4172,19 +4199,51 @@ button,
   .advantages__list {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
+    row-gap: 37px;
   }
 
   .advantages__item {
-    padding: 0 calc(50vw - 145px);
+    padding: 0 calc(50vw - 113px);
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .advantages__item dl {
+    margin-right: 0;
+    margin-bottom: 8px;
+  }
+
+  .advantages__item dd {
+    text-align: center;
+  }
+
+  .advantages__item--bottom {
+    margin-top: 0;
   }
 
   .advantages__item--major {
-    padding: 50px calc(50vw - 145px);
+    margin-top: 10px;
+    margin-bottom: 5px;
+    padding: 35px calc(50vw - 145px) 42px;
     width: 100%;
   }
 
   .advantages__item--major dl {
-    margin-bottom: 25px;
+    margin-bottom: 15px;
+  }
+
+  .advantages__item--major dt {
+    margin-bottom: 10px;
+  }
+
+  .advantages__item--major p {
+    width: 227px;
   }
 
   .stock {
@@ -4203,18 +4262,23 @@ button,
   }
 
   .stock__item {
-    padding: 50px;
+    padding: 42px 35px;
     text-align: center;
   }
 
+  .stock__item p:first-child {
+    width: 100%;
+  }
+
   .stock__item a {
-    margin: 35px auto 0;
+    margin: 30px auto 0;
   }
 
   .stock__item--main {
     padding: 0;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    height: auto;
   }
 
   .stock__content {
@@ -4226,15 +4290,24 @@ button,
   .stock__item--main p {
     margin-right: auto;
     margin-left: auto;
+    margin-bottom: 0;
+  }
+
+  .stock__item--main p:first-child {
+    margin-bottom: 8px;
+  }
+
+  .stock__item--main span {
+    line-height: 80px;
   }
 
   .stock__item--main a {
-    margin-top: 40px;
+    margin-top: 30px;
   }
 
   .feedback {
     margin-top: 68px;
-    margin-bottom: 68px;
+    margin-bottom: 70px;
     width: 100%;
   }
 
@@ -4250,13 +4323,16 @@ button,
 
   .feedback__item {
     height: 335px;
-    padding: 40px 25px;
+    padding: 48px 25px;
   }
 
   .feedback__photo {
     position: absolute;
-    top: 40px;
-    left: 25px;
+    top: 42px;
+    left: 41px;
+    margin-top: 0;
+    width: 68px;
+    height: 68px;
   }
 
   .feedback__text {
@@ -4265,28 +4341,63 @@ button,
 
   .feedback__item h3 {
     padding-left: 100px;
-    margin-bottom: 34px;
+    margin-bottom: 16px;
+    line-height: 28px;
+  }
+
+  .feedback__content p {
+    text-align: center;
   }
 
   .feedback__btn-next,
   .feedback__btn-prev {
-    width: auto;
+    width: calc(50vw - 113px);
   }
 
-  .feedback__btn-next {
-    -webkit-transform: translateX(50%) rotate(-180deg);
-    -ms-transform: translateX(50%) rotate(-180deg);
-    transform: translateX(50%) rotate(-180deg);
+  .communication__register,
+  .communication__contacts {
+    padding: 67px calc(50vw - 145px);
   }
 
-  .feedback__btn-prev {
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    transform: translateX(-50%);
+  .communication__register h2,
+  .communication__contacts h2 {
+    margin-bottom: 44px;
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  .communication__form {
+    width: 100%;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    row-gap: 35px;
+  }
+
+  .communication__form .communication__button {
+    min-height: 52px;
+  }
+
+  .communication__contacts h2 {
+    margin-bottom: 41px;
+  }
+
+  .communication__list {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  .communication__office {
+    width: 100%;
+    margin-bottom: 26px;
+  }
+
+  .communication__link {
+    padding-left: 0;
+    width: 100%;
   }
 
   .footer {
-    padding-top: 50px;
+    padding-top: 48px;
     padding-bottom: 41px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -4311,7 +4422,8 @@ button,
   }
 
   .footer__list {
-    margin-bottom: 28px;
+    margin-right: 0;
+    margin-bottom: 16px;
     -webkit-column-count: 2;
     -moz-column-count: 2;
     column-count: 2;
@@ -4325,8 +4437,14 @@ button,
 
   .footer__item {
     margin-right: 0;
-    margin-bottom: 28px;
+    margin-bottom: 20px;
     width: 50%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  .footer__item:nth-child(2n) {
+    padding-left: 15px;
   }
 
   .footer__item a {
@@ -4335,6 +4453,7 @@ button,
   }
 
   .footer__social-list {
+    margin-right: 0;
     margin-bottom: 40px;
     -webkit-box-pack: start;
     -ms-flex-pack: start;

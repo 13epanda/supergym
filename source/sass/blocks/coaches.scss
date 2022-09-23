@@ -201,17 +201,29 @@
 .coaches__btn-next,
 .coaches__btn-prev {
   height: 100%;
-  width: auto;
+  width: 60px;
   top: 0;
   margin: 0;
+
+  @include vp-767 {
+    width: calc(50vw - 113px)
+  }
 }
 
 .coaches__btn-next {
-  right: -8px;
-  padding-right: 40px;
+  right: 0;
+  transform: translateX(50%) rotate(-180deg);
+
+  @include vp-767 {
+    transform: rotate(-180deg);
+  }
 }
 
 .coaches__btn-prev {
-  left: -8px;
-  padding-right: 40px;
+  left: 0;
+  transform: translateX(-50%);
+
+  @include vp-767 {
+    transform: none;
+  }
 }
