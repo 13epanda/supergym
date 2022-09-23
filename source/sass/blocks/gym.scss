@@ -112,6 +112,7 @@
 .gym__photo {
   width: 660px;
   height: 401px;
+  background-color: $color-light-slate-grey;
 
   @include vp-1199 {
     width: 100%;
