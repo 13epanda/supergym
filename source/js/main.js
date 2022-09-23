@@ -2,7 +2,7 @@ import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {membership} from './modules/membership';
 import {playYoutubeVideo} from './modules/youtube-video';
-import {createSwipers} from './modules/swiper';
+import {createCoachesSwiper, createFeedbackSwiper} from './modules/swiper';
 
 // ---------------------------------
 
@@ -23,7 +23,8 @@ window.addEventListener('DOMContentLoaded', () => {
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {
     initModals();
-    createSwipers();
+    createCoachesSwiper();
+    createFeedbackSwiper();
   });
 });
 

@@ -1,15 +1,5 @@
-const createSwipers = () => {
-  let swiperFeedback = new Swiper('.feedback__slider', {
-    slidesPerView: 1,
-    spaceBetween: 0,
-    loop: true,
-    loopFillGroupWithBlank: true,
-    navigation: {
-      nextEl: '.feedback__btn-next',
-      prevEl: '.feedback__btn-prev',
-    },
-  });
-  let swiperCoaches = new Swiper('.coaches__slider', {
+const createCoachesSwiper = () => {
+  const swiperCoaches = new Swiper('.coaches__slider', {
     slidesPerView: 1,
     spaceBetween: 0,
     breakpoints: {
@@ -33,7 +23,21 @@ const createSwipers = () => {
       prevEl: '.coaches__btn-prev',
     },
   });
-
+  return swiperCoaches;
 };
 
-export {createSwipers};
+const createFeedbackSwiper = () => {
+  const swiperFeedback = new Swiper('.feedback__slider', {
+    slidesPerView: 1,
+    spaceBetween: 0,
+    loop: true,
+    loopFillGroupWithBlank: true,
+    navigation: {
+      nextEl: '.feedback__btn-next',
+      prevEl: '.feedback__btn-prev',
+    },
+  });
+  return (swiperFeedback);
+};
+
+export {createCoachesSwiper, createFeedbackSwiper};

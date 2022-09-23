@@ -313,13 +313,13 @@
 
 .membership::after {
   position: absolute;
-  content: '';
+  content: "";
   bottom: -95px;
   right: -105px;
   width: 321px;
   height: 384px;
   transform: rotate(-210deg);
-  background-image: url('../img/desktop/weight.png');
+  background-image: url("../img/desktop/weight.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
