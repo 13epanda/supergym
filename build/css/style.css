@@ -2574,9 +2574,22 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: stretch;
   -ms-flex-align: stretch;
   align-items: stretch;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.coaches__wrapper[data-is-active] .coaches__list {
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
 }
 
 .coaches__item {
@@ -2702,6 +2715,12 @@ button,
 
 .coaches__btn-next,
 .coaches__btn-prev {
+  display: none;
+}
+
+.coaches__wrapper[data-is-active] .coaches__btn-next,
+.coaches__wrapper[data-is-active] .coaches__btn-prev {
+  display: block;
   height: 100%;
   width: 60px;
   top: 0;
@@ -3093,9 +3112,22 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: stretch;
   -ms-flex-align: stretch;
   align-items: stretch;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.feedback__wrapper[data-is-active] .feedback__list {
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
 }
 
 .feedback__item {
@@ -3103,7 +3135,7 @@ button,
   position: relative;
   width: 556px;
   height: 242px;
-  padding: 54px 63px 50px;
+  padding: 54px 63px 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3152,7 +3184,7 @@ button,
 }
 
 .feedback__content {
-  height: 100%;
+  height: 115px;
   overflow-y: auto;
 }
 
@@ -3167,6 +3199,12 @@ button,
 
 .feedback__btn-next,
 .feedback__btn-prev {
+  display: none;
+}
+
+.feedback__wrapper[data-is-active] .feedback__btn-next,
+.feedback__wrapper[data-is-active] .feedback__btn-prev {
+  display: block;
   height: 100%;
   width: 60px;
   top: 0;
@@ -4167,8 +4205,8 @@ button,
     margin-left: 0;
   }
 
-  .coaches__btn-next,
-  .coaches__btn-prev {
+  .coaches__wrapper[data-is-active] .coaches__btn-next,
+  .coaches__wrapper[data-is-active] .coaches__btn-prev {
     width: calc(50vw - 113px);
   }
 
@@ -4349,8 +4387,8 @@ button,
     text-align: center;
   }
 
-  .feedback__btn-next,
-  .feedback__btn-prev {
+  .feedback__wrapper[data-is-active] .feedback__btn-next,
+  .feedback__wrapper[data-is-active] .feedback__btn-prev {
     width: calc(50vw - 113px);
   }
 

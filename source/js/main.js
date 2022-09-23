@@ -3,6 +3,7 @@ import {initModals} from './modules/modals/init-modals';
 import {membership} from './modules/membership';
 import {playYoutubeVideo} from './modules/youtube-video';
 import {createCoachesSwiper, createFeedbackSwiper} from './modules/swiper';
+import {smoothScroll} from './modules/smooth-scroll';
 
 // ---------------------------------
 
@@ -15,6 +16,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
   // Modules
   // ---------------------------------
+  smoothScroll();
   playYoutubeVideo();
   membership();
 

@@ -1,4 +1,5 @@
 const createCoachesSwiper = () => {
+  document.querySelector('.coaches__wrapper').setAttribute('data-is-active', '');
   const swiperCoaches = new Swiper('.coaches__slider', {
     slidesPerView: 1,
     spaceBetween: 0,
@@ -27,10 +28,11 @@ const createCoachesSwiper = () => {
 };
 
 const createFeedbackSwiper = () => {
+  document.querySelector('.feedback__wrapper').setAttribute('data-is-active', '');
   const swiperFeedback = new Swiper('.feedback__slider', {
     slidesPerView: 1,
     spaceBetween: 0,
-    loop: true,
+    loop: false,
     loopFillGroupWithBlank: true,
     navigation: {
       nextEl: '.feedback__btn-next',

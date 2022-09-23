@@ -9,7 +9,7 @@
 
     <link rel="preload" href="fonts/BebasNeue-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/BebasNeue-Bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="fonts/Roboto-Condensed.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/RobotoCondensed.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/RobotoCondensed-Bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
 
     <link rel="icon" href="favicon.ico">
@@ -86,7 +86,7 @@
                 <img src="img/desktop/gym.jpg" srcset="img/desktop/gym@2x.jpg 2x" width="660" height="401" alt="Просторный зал площадью 900 кв/м.">
               </picture>
             </div>
-            <div class="gym__video is-open" data-video data-url="9TZXsZItgdw" data-params="showinfo=0&controls=0">
+            <div class="gym__video is-close" data-video data-url="9TZXsZItgdw" data-params="showinfo=0&controls=0">
               <div class="gym__preview">
                 <div class="gym__preview-bg"></div>
                 <!-- 1х: 364px; 2x: 728px -->
@@ -99,7 +99,7 @@
                   <source media="(max-width: 1200px)" srcset="img/tablet/gym-video-tablet.jpg 1x, img/tablet/gym-video-tablet@2x.jpg 2x">
                   <img src="img/desktop/gym-video.jpg" srcset="img/desktop/gym-video@2x.jpg 2x" width="364" height="228" alt="Просторный зал площадью 900 кв/м.">
                 </picture>
-                <a class="btn-video gym__btn" href="" aria-label="Воспроизвести видео" data-play>
+                <a class="btn-video gym__btn" href="https://www.youtube.com/watch?v=9TZXsZItgdw"  aria-label="Воспроизвести видео" data-play>
                   <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="50" cy="50" r="49" stroke="url(#a)" stroke-opacity=".2" stroke-width="2"/>
                     <circle cx="50" cy="50" r="36" fill="url(#b)"/>
@@ -292,7 +292,7 @@
             <p class="promo__title">Время</p>
             <p class="promo__time">12:00</p>
             <p class="promo__description">Ежегодные соревнования по CrossFit</p>
-            <a href="#register" class="btn btn-primary promo__btn" aria-label="Оставить заявку на участие в соревновании.">заполнить заявку</a>
+            <a href="#" class="btn btn-primary promo__btn" aria-label="Оставить заявку на участие в соревновании.">заполнить заявку</a>
           </div>
           <div class="promo__image">
             <!-- 1х: 500px; 2x: 1000px -->
@@ -719,7 +719,7 @@
               </div>
               <div class="communication__input input-text">
                 <label class="visually-hidden" for="phone">Телефон</label>
-                <input id="phone" type="tel" name="phone" placeholder="Телефон" pattern="\+7[\(]\d{3}[\)]\d{3}[-]\d{2}[-]\d{2}" title="Используйте формат: +7(123)456-78-90." required>
+                <input id="phone" type="number" name="phone" placeholder="Телефон" pattern="\d{10,}" title="Используйте формат: 9990001122." required>
               </div>
               <button class="btn-primary communication__button" type="submit">отправить</button>
             </form>

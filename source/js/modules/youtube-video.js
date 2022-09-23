@@ -4,10 +4,9 @@ const playYoutubeVideo = () => {
   allVideo.forEach((el) => {
     const buttonPlay = el.querySelector('[data-play]');
     const urlVideo = el.getAttribute('data-url');
-    el.classList.remove('is-open');
-    el.classList.add('is-close');
 
-    buttonPlay.addEventListener('click', function () {
+    buttonPlay.addEventListener('click', function (e) {
+      e.preventDefault();
       el.classList.remove('is-close');
       el.classList.add('is-open');
       let iframe = document.createElement('iframe');

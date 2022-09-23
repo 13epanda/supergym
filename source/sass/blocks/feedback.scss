@@ -56,7 +56,14 @@
   margin-block-start: 0;
   margin-block-end: 0;
   display: flex;
+  justify-content: center;
   align-items: stretch;
+  flex-wrap: wrap;
+}
+
+.feedback__wrapper[data-is-active] .feedback__list {
+  justify-content: flex-start;
+  flex-wrap: nowrap;
 }
 
 .feedback__item {
@@ -64,7 +71,7 @@
   position: relative;
   width: 556px;
   height: 242px;
-  padding: 54px 63px 50px;
+  padding: 54px 63px 30px;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
@@ -134,7 +141,7 @@
 }
 
 .feedback__content {
-  height: 100%;
+  height: 115px;
   overflow-y: auto;
 }
 
@@ -153,6 +160,12 @@
 
 .feedback__btn-next,
 .feedback__btn-prev {
+  display: none;
+}
+
+.feedback__wrapper[data-is-active] .feedback__btn-next,
+.feedback__wrapper[data-is-active] .feedback__btn-prev {
+  display: block;
   height: 100%;
   width: 60px;
   top: 0;

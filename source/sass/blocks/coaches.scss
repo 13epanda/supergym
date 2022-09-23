@@ -69,7 +69,14 @@
   margin-block-start: 0;
   margin-block-end: 0;
   display: flex;
+  justify-content: center;
   align-items: stretch;
+  flex-wrap: wrap;
+}
+
+.coaches__wrapper[data-is-active] .coaches__list {
+  justify-content: flex-start;
+  flex-wrap: nowrap;
 }
 
 .coaches__item {
@@ -200,6 +207,12 @@
 
 .coaches__btn-next,
 .coaches__btn-prev {
+  display: none;
+}
+
+.coaches__wrapper[data-is-active] .coaches__btn-next,
+.coaches__wrapper[data-is-active] .coaches__btn-prev {
+  display: block;
   height: 100%;
   width: 60px;
   top: 0;
