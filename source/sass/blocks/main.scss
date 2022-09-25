@@ -119,6 +119,10 @@
 
 .main__btn {
   margin-left: auto;
+
+  @include vp-1199 {
+    width: 187px;
+  }
 }
 
 .main__image {

@@ -1861,6 +1861,15 @@ button,
 .header a {
   padding-top: 0;
   padding-bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   font-family: "BebasNeue", "Arial", sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -3518,12 +3527,11 @@ button,
   }
 
   .header {
-    top: 40px;
+    top: 38px;
   }
 
   .header svg {
     width: 82px;
-    height: 17px;
   }
 
   .header a {
@@ -3560,6 +3568,10 @@ button,
     left: 0;
   }
 
+  .main__btn {
+    width: 187px;
+  }
+
   .main__image {
     width: 324px;
     height: 390px;
@@ -3590,7 +3602,7 @@ button,
   }
 
   .gym__text span {
-    margin-bottom: 30px;
+    margin-bottom: 32px;
   }
 
   .gym__text p[data-visible-tablet] {
@@ -3598,7 +3610,7 @@ button,
   }
 
   .gym__gallery {
-    margin-top: 40px;
+    margin-top: 38px;
     width: 100%;
   }
 
@@ -3637,11 +3649,11 @@ button,
   }
 
   .membership__month {
-    margin-right: 46px;
+    margin-right: 54px;
   }
 
   .membership__month button {
-    padding: 13px 0;
+    padding: 13px 0 12px;
     font-size: 18px;
     line-height: 27px;
   }
@@ -3684,7 +3696,7 @@ button,
     grid-template-columns: 1fr 56px;
     -ms-grid-rows: 20px 33px 20px 33px;
     grid-template-rows: 20px 33px 20px 33px;
-    padding: 48px 45px;
+    padding: 48px 44px;
     min-width: 292px;
     min-height: 292px;
     -webkit-column-gap: 29px;
@@ -3720,7 +3732,7 @@ button,
 
   .promo__description {
     margin-top: 0;
-    margin-bottom: 28px;
+    margin-bottom: 29px;
     font-size: 12px;
     line-height: 18px;
   }
@@ -3729,6 +3741,7 @@ button,
     min-height: 26px;
     font-size: 10px;
     line-height: 12px;
+    border-width: 2px;
   }
 
   .coaches {
@@ -4113,7 +4126,12 @@ button,
     margin-bottom: 35px;
   }
 
+  .membership__month {
+    margin-right: 42px;
+  }
+
   .membership__month button {
+    min-width: 60px;
     padding: 13px 0;
     font-size: 16px;
     line-height: 24px;
@@ -4173,6 +4191,15 @@ button,
 
   .promo__content {
     width: 100%;
+    padding-bottom: 52px;
+  }
+
+  .promo__description {
+    margin-bottom: 25px;
+  }
+
+  .promo__content .promo__btn {
+    padding-bottom: 10px;
   }
 
   .promo__image {
@@ -4266,6 +4293,11 @@ button,
 
   .advantages__item--bottom {
     margin-top: 0;
+    padding-top: 2px;
+  }
+
+  .advantages__item--bottom dl {
+    margin-bottom: 8px;
   }
 
   .advantages__item--major {
@@ -4276,7 +4308,7 @@ button,
   }
 
   .advantages__item--major dl {
-    margin-bottom: 15px;
+    margin-bottom: 11px;
   }
 
   .advantages__item--major dt {

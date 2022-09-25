@@ -30,7 +30,7 @@
   @include vp-1199 {
     grid-template-columns: 1fr 56px;
     grid-template-rows: 20px 33px 20px 33px;
-    padding: 48px 45px;
+    padding: 48px 44px;
     min-width: 292px;
     min-height: 292px;
     column-gap: 29px;
@@ -38,6 +38,7 @@
 
   @include vp-767 {
     width: 100%;
+    padding-bottom: 52px;
   }
 }
 
@@ -139,9 +140,13 @@
 
   @include vp-1199 {
     margin-top: 0;
-    margin-bottom: 28px;
+    margin-bottom: 29px;
     font-size: 12px;
     line-height: 18px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 25px;
   }
 }
 
@@ -155,6 +160,11 @@
     min-height: 26px;
     font-size: 10px;
     line-height: 12px;
+    border-width: 2px;
+  }
+
+  @include vp-767 {
+    padding-bottom: 10px;
   }
 }
 
