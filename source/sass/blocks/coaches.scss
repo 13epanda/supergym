@@ -41,6 +41,10 @@
   width: 1272px;
   margin: 0 auto;
 
+  @include vp-1365 {
+    width: 1100px;
+  }
+
   @include vp-1199 {
     width: 678px;
   }
@@ -54,6 +58,10 @@
   overflow: hidden;
   width: 1160px;
   margin: auto;
+
+  @include vp-1365 {
+    width: 1006px;
+  }
 
   @include vp-1199 {
     width: 566px;
@@ -184,11 +192,15 @@
 
 .coaches__item:hover .coaches__bg,
 .coaches__item:hover h3,
-.coaches__item:hover .coaches__description {
+.coaches__item:hover .coaches__description,
+.coaches__item:focus .coaches__bg,
+.coaches__item:focus h3,
+.coaches__item:focus .coaches__description {
   z-index: 1;
 }
 
-.coaches__item:hover h3 {
+.coaches__item:hover h3,
+.coaches__item:focus h3 {
   margin-top: 0;
   margin-bottom: 0;
 
@@ -201,7 +213,8 @@
   }
 }
 
-.coaches__item:hover .coaches__description {
+.coaches__item:hover .coaches__description,
+.coaches__item:focus .coaches__description {
   display: block;
 }
 

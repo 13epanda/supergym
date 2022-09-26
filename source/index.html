@@ -12,7 +12,7 @@
     <link rel="preload" href="fonts/RobotoCondensed.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/RobotoCondensed-Bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
 
-    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicons/favicon.ico">
     <link rel="icon" href="img/favicons/32.png" type="image/png" sizes="32x32">
     <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png">
@@ -29,7 +29,9 @@
               <use xlink:href="img/sprite_auto.svg#logo"></use>
             </svg>
           </a>
-          <a href="tel:78005555555" aria-label="Контактный телефон: 8-800-555-55-55.">8-800-555-55-55</a>
+          <div class="header__phone">
+            <a href="tel:78005555555" aria-label="Контактный телефон: 8-800-555-55-55.">8-800-555-55-55</a>
+          </div>
         </section>
       </header>
       <main>
@@ -47,10 +49,10 @@
           <div class="main__image">
             <!-- 1х: 500px; 2x: 1000px -->
             <picture>
-              <source type="image/webp" media="(max-width: 1200px)" srcset="img/tablet/main-tablet.webp 1x, img/tablet/main-tablet@2x.webp 2x">
+              <source type="image/webp" media="(max-width: 1199px)" srcset="img/tablet/main-tablet.webp 1x, img/tablet/main-tablet@2x.webp 2x">
               <source type="image/webp" srcset="img/desktop/main.webp 1x, img/desktop/main@2x.webp 2x">
 
-              <source media="(max-width: 1200px)" srcset="img/tablet/main-tablet.jpg 1x, img/tablet/main-tablet@2x.jpg 2x">
+              <source media="(max-width: 1199px)" srcset="img/tablet/main-tablet.jpg 1x, img/tablet/main-tablet@2x.jpg 2x">
               <img src="img/desktop/main.jpg" srcset="img/desktop/main@2x.jpg 2x" width="500" height="556" alt="Мускулистый мужчина в футболге супермена.">
             </picture>
           </div>
@@ -77,12 +79,12 @@
             <div class="gym__photo">
               <!-- 1х: 660px; 2x: 401px -->
               <picture>
-                <source type="image/webp" media="(max-width: 768px)" srcset="img/mobile/gym-mobile.webp 1x, img/mobile/gym-mobile@2x.webp 2x">
-                <source type="image/webp" media="(max-width: 1200px)" srcset="img/tablet/gym-tablet.webp 1x, img/tablet/gym-tablet@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 767px)" srcset="img/mobile/gym-mobile.webp 1x, img/mobile/gym-mobile@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 1199px)" srcset="img/tablet/gym-tablet.webp 1x, img/tablet/gym-tablet@2x.webp 2x">
                 <source type="image/webp" srcset="img/desktop/gym.webp 1x, img/desktop/gym@2x.webp 2x">
 
-                <source media="(max-width: 768px)" srcset="img/mobile/gym-mobile.jpg 1x, img/mobile/gym-mobile@2x.jpg 2x">
-                <source media="(max-width: 1200px)" srcset="img/tablet/gym-tablet.jpg 1x, img/tablet/gym-tablet@2x.jpg 2x">
+                <source media="(max-width: 767px)" srcset="img/mobile/gym-mobile.jpg 1x, img/mobile/gym-mobile@2x.jpg 2x">
+                <source media="(max-width: 1199px)" srcset="img/tablet/gym-tablet.jpg 1x, img/tablet/gym-tablet@2x.jpg 2x">
                 <img src="img/desktop/gym.jpg" srcset="img/desktop/gym@2x.jpg 2x" width="660" height="401" alt="Просторный зал площадью 900 кв/м.">
               </picture>
             </div>
@@ -91,12 +93,12 @@
                 <div class="gym__preview-bg"></div>
                 <!-- 1х: 364px; 2x: 728px -->
                 <picture>
-                  <source type="image/webp" media="(max-width: 768px)" srcset="img/mobile/gym-video-mobile.webp 1x, img/mobile/gym-video-mobile@2x.webp 2x">
-                  <source type="image/webp" media="(max-width: 1200px)" srcset="img/tablet/gym-video-tablet.webp 1x, img/tablet/gym-video-tablet@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 767px)" srcset="img/mobile/gym-video-mobile.webp 1x, img/mobile/gym-video-mobile@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 1199px)" srcset="img/tablet/gym-video-tablet.webp 1x, img/tablet/gym-video-tablet@2x.webp 2x">
                   <source type="image/webp" srcset="img/desktop/gym-video.webp 1x, img/desktop/gym-video@2x.webp 2x">
 
-                  <source media="(max-width: 768px)" srcset="img/mobile/gym-video-mobile.jpg 1x, img/mobile/gym-video-mobile@2x.jpg 2x">
-                  <source media="(max-width: 1200px)" srcset="img/tablet/gym-video-tablet.jpg 1x, img/tablet/gym-video-tablet@2x.jpg 2x">
+                  <source media="(max-width: 767px)" srcset="img/mobile/gym-video-mobile.jpg 1x, img/mobile/gym-video-mobile@2x.jpg 2x">
+                  <source media="(max-width: 1199px)" srcset="img/tablet/gym-video-tablet.jpg 1x, img/tablet/gym-video-tablet@2x.jpg 2x">
                   <img src="img/desktop/gym-video.jpg" srcset="img/desktop/gym-video@2x.jpg 2x" width="364" height="228" alt="Просторный зал площадью 900 кв/м.">
                 </picture>
                 <a class="btn-video gym__btn" href="https://www.youtube.com/watch?v=9TZXsZItgdw" aria-label="Воспроизвести видео." data-play>
@@ -289,10 +291,10 @@
           <div class="promo__image">
             <!-- 1х: 660px; 2x: 1320px -->
             <picture>
-              <source type="image/webp" media="(max-width: 1200px)" srcset="img/tablet/promo-tablet.webp 1x, img/tablet/promo-tablet@2x.webp 2x">
+              <source type="image/webp" media="(max-width: 1199px)" srcset="img/tablet/promo-tablet.webp 1x, img/tablet/promo-tablet@2x.webp 2x">
               <source type="image/webp" srcset="img/desktop/promo.webp 1x, img/desktop/promo@2x.webp 2x">
 
-              <source media="(max-width: 1200px)" srcset="img/tablet/promo-tablet.jpg 1x, img/tablet/promo-tablet@2x.jpg 2x">
+              <source media="(max-width: 1199px)" srcset="img/tablet/promo-tablet.jpg 1x, img/tablet/promo-tablet@2x.jpg 2x">
               <img src="img/desktop/promo.jpg" srcset="img/desktop/promo@2x.jpg 2x" width="660" height="500" alt="Брутальный мужчина в брызгах магнезии.">
             </picture>
           </div>
@@ -302,7 +304,7 @@
           <div class="coaches__wrapper">
             <div class="coaches__slider swiper-initialized swiper-horizontal swiper-pointer-events">
               <ol class="swiper-wrapper coaches__list">
-                <li class="swiper-slide coaches__item">
+                <li class="swiper-slide coaches__item" tabindex="0">
                   <div class="coaches__bg"></div>
                   <div class="coaches__photo">
                     <!-- 1х: 260px; 2x: 520px -->
@@ -321,7 +323,7 @@
                     </ul>
                   </div>
                 </li>
-                <li class="swiper-slide coaches__item">
+                <li class="swiper-slide coaches__item" tabindex="0">
                   <div class="coaches__bg"></div>
                   <div class="coaches__photo">
                     <!-- 1х: 260px; 2x: 520px -->
@@ -340,7 +342,7 @@
                     </ul>
                   </div>
                 </li>
-                <li class="swiper-slide coaches__item">
+                <li class="swiper-slide coaches__item" tabindex="0">
                   <div class="coaches__bg"></div>
                   <div class="coaches__photo">
                     <!-- 1х: 260px; 2x: 520px -->
@@ -359,7 +361,7 @@
                     </ul>
                   </div>
                 </li>
-                <li class="swiper-slide coaches__item">
+                <li class="swiper-slide coaches__item" tabindex="0">
                   <div class="coaches__bg"></div>
                   <div class="coaches__photo">
                     <!-- 1х: 260px; 2x: 520px -->
@@ -379,7 +381,7 @@
                     </ul>
                   </div>
                 </li>
-                <li class="swiper-slide coaches__item">
+                <li class="swiper-slide coaches__item" tabindex="0">
                   <div class="coaches__bg"></div>
                   <div class="coaches__photo">
                     <!-- 1х: 260px; 2x: 520px -->
@@ -398,7 +400,7 @@
                     </ul>
                   </div>
                 </li>
-                <li class="swiper-slide coaches__item">
+                <li class="swiper-slide coaches__item" tabindex="0">
                   <div class="coaches__bg"></div>
                   <div class="coaches__photo">
                     <!-- 1х: 260px; 2x: 520px -->
@@ -417,7 +419,7 @@
                     </ul>
                   </div>
                 </li>
-                <li class="swiper-slide coaches__item">
+                <li class="swiper-slide coaches__item" tabindex="0">
                   <div class="coaches__bg"></div>
                   <div class="coaches__photo">
                     <!-- 1х: 260px; 2x: 520px -->
@@ -436,7 +438,7 @@
                     </ul>
                   </div>
                 </li>
-                <li class="swiper-slide coaches__item">
+                <li class="swiper-slide coaches__item" tabindex="0">
                   <div class="coaches__bg"></div>
                   <div class="coaches__photo">
                     <!-- 1х: 260px; 2x: 520px -->
@@ -536,12 +538,12 @@
               <div class="stock__img">
                 <!-- 1х: 280px; 2x: 560px -->
                 <picture>
-                  <source type="image/webp" media="(max-width: 768px)" srcset="img/mobile/discount-mobile.webp 1x, img/mobile/discount-mobile@2x.webp 2x">
-                  <source type="image/webp" media="(max-width: 1200px)" srcset="img/tablet/discount-tablet.webp 1x, img/tablet/discount-tablet@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 767px)" srcset="img/mobile/discount-mobile.webp 1x, img/mobile/discount-mobile@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 1199px)" srcset="img/tablet/discount-tablet.webp 1x, img/tablet/discount-tablet@2x.webp 2x">
                   <source type="image/webp" srcset="img/desktop/discount.webp 1x, img/desktop/discount@2x.webp 2x">
 
-                  <source media="(max-width: 768px)" srcset="img/mobile/discount-mobile.jpg 1x, img/mobile/discount-mobile@2x.jpg 2x">
-                  <source media="(max-width: 1200px)" srcset="img/tablet/discount-tablet.jpg 1x, img/tablet/discount-tablet@2x.jpg 2x">
+                  <source media="(max-width: 767px)" srcset="img/mobile/discount-mobile.jpg 1x, img/mobile/discount-mobile@2x.jpg 2x">
+                  <source media="(max-width: 1199px)" srcset="img/tablet/discount-tablet.jpg 1x, img/tablet/discount-tablet@2x.jpg 2x">
                   <img src="img/desktop/discount.jpg" srcset="img/desktop/discount@2x.jpg 2x" width="280" height="462" alt="Красивая девушка в легинсах.">
                 </picture>
               </div>
@@ -711,7 +713,7 @@
               </div>
               <div class="communication__input input-text">
                 <label class="visually-hidden" for="phone">Телефон</label>
-                <input id="phone" type="tel" name="phone" placeholder="Телефон" pattern="\d{10,}" title="Используйте формат: 9990001122." required>
+                <input id="phone" type="tel" name="phone" placeholder="Телефон" pattern="^[+]?[0-9]*" title="Введите номер телефона." required>
               </div>
               <button class="btn-primary communication__button" type="submit">отправить</button>
             </form>
@@ -733,6 +735,7 @@
                   </dl>
                 </li>
               </ul>
+              <div class="communication__line"></div>
               <ul class="communication__link">
                 <li class="communication__item">
                   <dl>

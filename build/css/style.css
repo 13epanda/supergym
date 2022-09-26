@@ -1650,7 +1650,7 @@ button,
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
-  color: #ffffff;
+  color: #b6bdcc;
   background: none;
   border: none;
   border-bottom: 1px solid #74819c;
@@ -1661,7 +1661,7 @@ button,
 
 .input-text input:hover,
 .input-text input:focus {
-  color: #495a7d;
+  border-bottom-color: #0041ca;
 }
 
 .input-text input::-webkit-input-placeholder {
@@ -1870,6 +1870,31 @@ button,
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start;
+}
+
+.header a:hover,
+.header a:focus,
+.header a:active {
+  outline: none;
+}
+
+.header__phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+}
+
+.header__phone a {
   font-family: "BebasNeue", "Arial", sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -1879,15 +1904,13 @@ button,
   text-decoration: none;
 }
 
-.header a:hover,
-.header a:focus {
+.header__phone a:hover,
+.header__phone a:focus {
   color: #030a1a;
-  outline: none;
 }
 
-.header a:active {
+.header__phone a:active {
   color: #102654;
-  outline: none;
 }
 
 .main {
@@ -2104,6 +2127,9 @@ button,
 }
 
 .gym__video img {
+  width: 100vw;
+  height: auto;
+  min-height: 167px;
   -o-object-fit: cover;
   object-fit: cover;
 }
@@ -2277,6 +2303,8 @@ button,
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .membership__categories[data-membership="hidden"] {
@@ -2290,7 +2318,7 @@ button,
   position: relative;
 }
 
-.membership__category:last-child {
+.membership__category:nth-child(3n) {
   margin-right: 0;
 }
 
@@ -2709,16 +2737,21 @@ button,
 
 .coaches__item:hover .coaches__bg,
 .coaches__item:hover h3,
-.coaches__item:hover .coaches__description {
+.coaches__item:hover .coaches__description,
+.coaches__item:focus .coaches__bg,
+.coaches__item:focus h3,
+.coaches__item:focus .coaches__description {
   z-index: 1;
 }
 
-.coaches__item:hover h3 {
+.coaches__item:hover h3,
+.coaches__item:focus h3 {
   margin-top: 0;
   margin-bottom: 0;
 }
 
-.coaches__item:hover .coaches__description {
+.coaches__item:hover .coaches__description,
+.coaches__item:focus .coaches__description {
   display: block;
 }
 
@@ -2969,7 +3002,7 @@ button,
   min-height: 211px;
   padding: 30px 35px 35px;
   color: #1c3374;
-  border: 1px solid transparent;
+  border: 7px solid #103aae;
   border-image-source: linear-gradient(90deg, #d10a42 0%, #00359f 75%);
   border-image-width: 7px;
   border-image-repeat: stretch;
@@ -2986,8 +3019,12 @@ button,
   line-height: 22px;
 }
 
+.stock__item p:last-of-type {
+  margin-bottom: 45px;
+}
+
 .stock__item p:first-child {
-  margin-bottom: 30px;
+  margin-bottom: 8px;
   font-weight: 700;
   font-size: 26px;
   line-height: 26px;
@@ -3054,6 +3091,10 @@ button,
   margin-bottom: 23px;
   font-size: 18px;
   line-height: 25px;
+}
+
+.stock__item--main p:last-of-type {
+  margin-bottom: 0;
 }
 
 .stock__item--main p:first-child {
@@ -3264,7 +3305,7 @@ button,
 
 .communication__register {
   padding-right: 170px;
-  padding-left: calc(25vw - 240px);
+  padding-left: calc(50vw - 580px);
   background: #102654;
 }
 
@@ -3294,7 +3335,7 @@ button,
 
 .communication__contacts {
   padding-left: 120px;
-  padding-right: calc(25vw - 290px);
+  padding-right: calc(50vw - 580px);
   border-top: 1px solid #74819c;
 }
 
@@ -3366,7 +3407,6 @@ button,
 
 .communication__link {
   padding-left: 58px;
-  border-left: 1px solid #74819c;
 }
 
 .communication__link a:hover,
@@ -3374,6 +3414,15 @@ button,
   outline: none;
   color: #495a7d;
   text-decoration: underline;
+}
+
+.communication__line {
+  width: 1px;
+  height: auto;
+  -ms-flex-item-align: stretch;
+  -ms-grid-row-align: stretch;
+  align-self: stretch;
+  background-color: #74819c;
 }
 
 .footer {
@@ -3385,9 +3434,9 @@ button,
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
   background-color: #030a1a;
 }
 
@@ -3408,6 +3457,7 @@ button,
   margin-block-start: 0;
   -webkit-margin-after: 0;
   margin-block-end: 0;
+  margin-top: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3422,17 +3472,12 @@ button,
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
-  margin-right: 16px;
+  margin-right: -24px;
 }
 
 .footer__item {
   list-style-type: none;
   margin-right: 40px;
-}
-
-.footer__item:last-child {
-  margin-right: 0;
-  margin-bottom: 0;
 }
 
 .footer__item a {
@@ -3510,6 +3555,24 @@ button,
   }
 } */
 
+@media (max-width: 1365px) {
+  .coaches__wrapper {
+    width: 1100px;
+  }
+
+  .coaches__slider {
+    width: 1006px;
+  }
+
+  .communication__register {
+    padding-left: calc(25vw - 240px);
+  }
+
+  .communication__contacts {
+    padding-right: calc(25vw - 290px);
+  }
+}
+
 @media (max-width: 1199px) {
   .container {
     padding: 0 calc(50vw - 339px);
@@ -3534,7 +3597,7 @@ button,
     width: 82px;
   }
 
-  .header a {
+  .header__phone a {
     font-size: 24px;
     line-height: 24px;
     letter-spacing: 0.02em;
@@ -3769,7 +3832,8 @@ button,
     padding: 55px 40px 24px 46px;
   }
 
-  .coaches__item:hover h3 {
+  .coaches__item:hover h3,
+  .coaches__item:focus h3 {
     margin-left: -20px;
   }
 
@@ -3881,7 +3945,7 @@ button,
 
   .stock__content {
     grid-row: auto;
-    width: 305px;
+    width: 280px;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
   }
@@ -3975,7 +4039,8 @@ button,
   }
 
   .footer__list {
-    margin-right: 26px;
+    margin-top: 7px;
+    margin-right: -4px;
   }
 
   .footer__item {
@@ -4019,7 +4084,7 @@ button,
     height: 15px;
   }
 
-  .header a {
+  .header__phone a {
     font-size: 20px;
     line-height: 20px;
   }
@@ -4095,19 +4160,21 @@ button,
     -webkit-transform: none;
     -ms-transform: none;
     transform: none;
-    width: 100%;
-    height: 167px;
+    width: 100vw;
+    height: auto;
+    min-height: 167px;
     margin-top: 40px;
   }
 
   .gym__preview img {
-    width: 100%;
-    height: 167px;
+    width: 100vw;
+    height: auto;
+    min-height: 167px;
   }
 
   .gym__video iframe {
     width: 100%;
-    height: 100%;
+    height: auto;
   }
 
   .membership {
@@ -4231,7 +4298,8 @@ button,
     padding: 45px 27px 24px 25px;
   }
 
-  .coaches__item:hover h3 {
+  .coaches__item:hover h3,
+  .coaches__item:focus h3 {
     margin-left: 0;
   }
 
@@ -4337,6 +4405,10 @@ button,
   .stock__item {
     padding: 42px 35px;
     text-align: center;
+  }
+
+  .stock__item p:last-of-type {
+    margin-bottom: 0;
   }
 
   .stock__item p:first-child {
@@ -4474,6 +4546,10 @@ button,
     border: none;
   }
 
+  .communication__line {
+    display: none;
+  }
+
   .footer {
     padding-top: 48px;
     padding-bottom: 41px;
@@ -4501,8 +4577,7 @@ button,
   }
 
   .footer__list {
-    margin-right: 0;
-    margin-bottom: 25px;
+    margin: 0 0 17px 0;
     display: block;
     -webkit-column-count: 2;
     -moz-column-count: 2;
@@ -4511,7 +4586,6 @@ button,
     -moz-column-fill: auto;
     column-fill: auto;
     width: 100%;
-    margin-left: 0;
   }
 
   .footer__item {

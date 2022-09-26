@@ -50,8 +50,12 @@
 
 .communication__register {
   padding-right: 170px;
-  padding-left: calc(25vw - 240px);
+  padding-left: calc(50vw - 580px);
   background: $color-sapphire;
+
+  @include vp-1365 {
+    padding-left: calc(25vw - 240px);
+  }
 }
 
 .communication__register h2 {
@@ -91,8 +95,12 @@
 
 .communication__contacts {
   padding-left: 120px;
-  padding-right: calc(25vw - 290px);
+  padding-right: calc(50vw - 580px);
   border-top: 1px solid $color-light-slate-grey;
+
+  @include vp-1365 {
+    padding-right: calc(25vw - 290px);
+  }
 }
 
 .communication__contacts h2 {
@@ -193,7 +201,6 @@
 
 .communication__link {
   padding-left: 58px;
-  border-left: 1px solid $color-light-slate-grey;
 
   @include vp-1199 {
     padding-left: 47px;
@@ -212,5 +219,16 @@
     outline: none;
     color: $color-shambray;
     text-decoration: underline;
+  }
+}
+
+.communication__line {
+  width: 1px;
+  height: auto;
+  align-self: stretch;
+  background-color: $color-light-slate-grey;
+
+  @include vp-767 {
+    display: none;
   }
 }
