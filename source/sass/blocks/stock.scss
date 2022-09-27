@@ -62,7 +62,7 @@
   align-items: flex-start;
   justify-content: flex-start;
   min-height: 211px;
-  padding: 30px 35px 35px;
+  padding: 23px 30px 30px;
   color: $color-resolution-blue;
   border: 7px solid $color-egyptian-blue;
   border-image-source: linear-gradient(90deg, rgba(209, 10, 66, 1) 0%, rgba(0, 53, 159, 1) 75%);
@@ -70,8 +70,12 @@
   border-image-repeat: stretch;
   border-image-slice: 1;
 
+  @include vp-1199 {
+    padding: 25px 27px 29px;
+  }
+
   @include vp-767 {
-    padding: 42px 35px;
+    padding: 35px;
     text-align: center;
   }
 }
@@ -143,6 +147,7 @@
   border: none;
 
   @include vp-1199 {
+    padding: 0;
     grid-column: 1/-1;
     height: 462px;
   }
@@ -212,6 +217,10 @@
   font-size: 70px;
   line-height: 69px;
 
+  @include vp-1199 {
+    padding-top: 1px;
+  }
+
   @include vp-767 {
     line-height: 80px;
   }
@@ -242,6 +251,6 @@
   object-fit: cover;
 
   @include vp-1199 {
-    width: auto;
+    object-position: top;
   }
 }

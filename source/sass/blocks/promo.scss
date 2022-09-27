@@ -28,7 +28,7 @@
   column-gap: 50px;
 
   @include vp-1199 {
-    grid-template-columns: 1fr 56px;
+    grid-template-columns: 117px 56px;
     grid-template-rows: 20px 33px 20px 33px;
     padding: 48px 44px;
     min-width: 292px;
@@ -37,7 +37,9 @@
   }
 
   @include vp-767 {
+    justify-content: space-around;
     width: 100%;
+    padding-top: 45px;
     padding-bottom: 52px;
   }
 }
@@ -151,10 +153,11 @@
 }
 
 .promo__content .promo__btn {
-  margin: 0;
+  margin: auto 0 0;
   grid-column: 1/-1;
   width: 100%;
   min-height: 67px;
+  height: auto;
 
   @include vp-1199 {
     min-height: 26px;
@@ -173,8 +176,11 @@
   height: auto;
   background-color: $color-cobalt;
 
-  @include vp-767 {
+  @include vp-1199 {
     width: 100%;
+  }
+
+  @include vp-767 {
     height: 292px;
   }
 }
