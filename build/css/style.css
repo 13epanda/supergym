@@ -3696,6 +3696,11 @@ button,
     height: 167px;
   }
 
+  .gym__video iframe {
+    width: 266px;
+    height: 167px;
+  }
+
   .membership {
     padding-top: 95px;
     padding-bottom: 60px;
@@ -4160,10 +4165,14 @@ button,
     -webkit-transform: none;
     -ms-transform: none;
     transform: none;
-    width: 100vw;
+    width: 100%;
     height: auto;
     min-height: 167px;
     margin-top: 40px;
+  }
+
+  .gym__preview {
+    width: 100%;
   }
 
   .gym__preview img {
@@ -4175,6 +4184,30 @@ button,
   .gym__video iframe {
     width: 100%;
     height: auto;
+  }
+
+  [data-video].is-open {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  [data-video].is-open .gym__preview {
+    display: block;
+    visibility: hidden;
+  }
+
+  [data-video].is-open iframe {
+    position: absolute;
+    height: 100%;
   }
 
   .membership {
